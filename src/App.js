@@ -1,18 +1,18 @@
-import styled from "styled-components"
-import { GlobalRootStyles} from "./GlobalRootStyles.js"
-import { GlobalFontStyles } from "./GlobalFontStyles.js"
+import styled from 'styled-components'
+import { GlobalRootStyles} from './GlobalRootStyles'
+import { GlobalFontStyles } from './GlobalFontStyles'
 
-import SectionHeader from "./sections/SectionHeader.js"
-import SectionInfo from "./sections/SectionInfo.js"
-import SectionDev from "./sections/SectionDev.js"
-import SectionDesign from "./sections/SectionDesign.js"
-import SectionFooter from "./sections/SectionFooter.js"
+import SectionHeader from './sections/SectionHeader'
+import SectionInfo from './sections/SectionInfo'
+import SectionDev from './sections/SectionDev'
+import SectionDesign from './sections/SectionDesign'
+import SectionFooter from './sections/SectionFooter'
 
 const StyledAppContainer = styled.div`
  
 `
 
-function App() {
+export default function App() {
   return (
       <StyledAppContainer>
           <GlobalRootStyles />
@@ -25,5 +25,3 @@ function App() {
       </StyledAppContainer>
   )
 }
-
-export default App

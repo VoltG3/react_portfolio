@@ -1,10 +1,4 @@
-import styled from "styled-components"
-
-const StyledSectionFooterContainer = styled.div`
-  width: 1440px;
-  height: 424px;
-  border: solid 1px black;
-`
+import { StyledSectionFooterContainer } from './Sections.styles'
 
 export default function SectionFooter() {
     return (

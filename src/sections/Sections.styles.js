@@ -1,0 +1,31 @@
+import styled from 'styled-components'
+
+export const StyledSectionHeaderContainer = styled.div`
+  width: 1440px;
+  height: 500px;
+  border: solid 1px black;
+`
+
+export const StyledSectionInfoContainer = styled.div`
+  width: 1440px;
+  height: 500px;
+  border: solid 1px black;
+`
+
+export const StyledSectionDevContainer = styled.div`
+  width: 1440px;
+  height: 802px;
+  border: solid 1px black;
+`
+
+export const StyledSectionDesignContainer = styled.div`
+  width: 1440px;
+  height: 600px;
+  border: solid 1px black;
+`
+
+export const StyledSectionFooterContainer = styled.div`
+  width: 1440px;
+  height: 424px;
+  border: solid 1px black;
+`

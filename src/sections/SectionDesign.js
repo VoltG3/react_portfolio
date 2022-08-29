@@ -1,10 +1,4 @@
-import styled from "styled-components"
-
-const StyledSectionDesignContainer = styled.div`
-  width: 1440px;
-  height: 600px;
-  border: solid 1px black;
-`
+import { StyledSectionDesignContainer } from './Sections.styles'
 
 export default function SectionDesign() {
     return (

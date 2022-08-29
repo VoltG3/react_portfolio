@@ -1,8 +1,8 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalFontStyles = createGlobalStyle`
   
-    .sectionHeader-textline-firstpart {
+    .sectionHeader-textline-header-firstpart {
       font-family: var(--font-primary);
           font-style: normal;
           font-weight: 400;
@@ -11,7 +11,7 @@ export const GlobalFontStyles = createGlobalStyle`
       color: var(--color-primary);
     }
     
-    .sectionHeader-textline-secondpart {
+    .sectionHeader-textline-header-secondpart {
       font-family: var(--font-primary);
           font-style: normal;
           font-weight: 400;
@@ -30,7 +30,7 @@ export const GlobalFontStyles = createGlobalStyle`
       text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
     }
     
-    .sectionInfo-textline {
+    .sectionInfo-textline-textcontent {
       font-family: var(--font-secondary);
           font-style: normal;
           font-weight: 400;
@@ -40,7 +40,7 @@ export const GlobalFontStyles = createGlobalStyle`
       color: var(--color-primary);
     }
     
-    .sectionInfo-textline-subsection {
+    .sectionInfo-textline-subsection-textcontent {
       font-family: var(--font-primary);
           font-style: normal;
           font-weight: 400;
