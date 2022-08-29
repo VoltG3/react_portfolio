@@ -7,3 +7,5 @@ Open `http://localhost:3000` to view it in your browser.
 
 Icon's source https://icons8.com/   
 excluding SpringBoot and Cisco icons
+
+Favicon creator http://onlinefavicon.com/
