@@ -9,3 +9,11 @@ Icon's source https://icons8.com/
 excluding SpringBoot and Cisco icons
 
 Favicon creator http://onlinefavicon.com/
+
+#### Dependencies
+`
+yarn add styled-components
+`
+
+- [styled-components](https://www.npmjs.com/package/styled-components)
+
