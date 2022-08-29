@@ -15,4 +15,6 @@ export const GlobalRootStyles = createGlobalStyle`
       
       --shadow-foto: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
     }
+    
+    ul { list-style-type: none; }
 `

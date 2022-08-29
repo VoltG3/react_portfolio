@@ -35,6 +35,10 @@ export const StyledSectionDesignContainer = styled.div`
 `
 
 export const StyledSectionFooterContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 1440px;
   height: 424px;
   border: solid 1px black;
