@@ -12,5 +12,7 @@ export const GlobalRootStyles = createGlobalStyle`
       
       --font-primary: 'Roboto Slab', sans-serif;
       --font-secondary: 'Ubuntu', sans-serif;
+      
+      --shadow-foto: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
     }
 `

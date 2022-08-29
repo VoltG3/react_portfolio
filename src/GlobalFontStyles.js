@@ -26,6 +26,7 @@ export const GlobalFontStyles = createGlobalStyle`
           font-weight: 300;
           font-size: 32px;
           line-height: 42px;
+      padding: 0 26px 0 0;
       color: var(--color-none);
       text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
     }

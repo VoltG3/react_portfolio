@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const StyledSectionHeaderContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 1440px;
   height: 500px;
   border: solid 1px black;
