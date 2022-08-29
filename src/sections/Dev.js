@@ -1,6 +1,6 @@
-import { StyledSectionDevContainer } from './Sections.styles'
+import { StyledSectionDevContainer } from './Dev.style'
 
-export default function SectionDev() {
+export default function Dev() {
     return (
         <StyledSectionDevContainer>
             <p>Dev</p>

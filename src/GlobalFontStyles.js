@@ -28,7 +28,7 @@ export const GlobalFontStyles = createGlobalStyle`
           line-height: 42px;
       padding: 0 26px 0 0;
       color: var(--color-none);
-      text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);
+      text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.7);
     }
     
     .sectionInfo-textline-textcontent {
@@ -56,8 +56,8 @@ export const GlobalFontStyles = createGlobalStyle`
           font-style: normal;
           font-weight: 400;
           font-size: 26px;
-          line-height: 34px;
           letter-spacing: 0.02em;
+      margin: 20px 0 16px 0;
       color: var(--color-none);
     }
 
@@ -81,6 +81,15 @@ export const GlobalFontStyles = createGlobalStyle`
       color: var(--color-none);
     }
 
+    .sectionFooter-textline-html-credentials {
+      font-family: var(--font-primary); 
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 21px;
+      color: var(--color-default);
+    }
+    
     .linkFrame-textline-light {
       font-family: var(--font-secondary);
           font-style: normal;

@@ -8,9 +8,9 @@ Open `http://localhost:3000` to view it in your browser.
 Icon's source https://icons8.com/   
 excluding SpringBoot and Cisco icons
 
-Favicon creator http://onlinefavicon.com/
-
-Fonts https://fonts.google.com/
+Favicon creator http://onlinefavicon.com/  
+Fonts https://fonts.google.com/  
+Img compressing https://onlineconvertfree.com/convert/jpg/
 
 #### Dependencies
 `

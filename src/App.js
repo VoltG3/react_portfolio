@@ -2,11 +2,11 @@ import styled from 'styled-components'
 import { GlobalRootStyles} from './GlobalRootStyles'
 import { GlobalFontStyles } from './GlobalFontStyles'
 
-import SectionHeader from './sections/SectionHeader'
-import SectionInfo from './sections/SectionInfo'
-import SectionDev from './sections/SectionDev'
-import SectionDesign from './sections/SectionDesign'
-import SectionFooter from './sections/SectionFooter'
+import Header from './sections/Header'
+import Info from './sections/Info'
+import Dev from './sections/Dev'
+import Design from './sections/Design'
+import Footer from './sections/Footer'
 
 const StyledAppContainer = styled.div`
  
@@ -17,11 +17,11 @@ export default function App() {
       <StyledAppContainer>
           <GlobalRootStyles />
           <GlobalFontStyles />
-              <SectionHeader />
-              <SectionInfo />
-              <SectionDev />
-              <SectionDesign />
-              <SectionFooter />
+              <Header />
+              <Info />
+              <Dev />
+              <Design />
+              <Footer />
       </StyledAppContainer>
   )
 }

@@ -1,6 +1,6 @@
-import { StyledSectionDesignContainer } from './Sections.styles'
+import { StyledSectionDesignContainer } from './Design.style'
 
-export default function SectionDesign() {
+export default function Design() {
     return (
         <StyledSectionDesignContainer>
             <p>Design</p>

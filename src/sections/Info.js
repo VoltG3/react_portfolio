@@ -1,7 +1,6 @@
-import styled from "styled-components";
-import { StyledSectionInfoContainer } from './Sections.styles'
+import { StyledSectionInfoContainer } from './Info.style'
 
-export default function SectionInfo() {
+export default function Info() {
     return (
         <StyledSectionInfoContainer>
             <div>

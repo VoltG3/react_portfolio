@@ -10,10 +10,10 @@ export const GlobalRootStyles = createGlobalStyle`
       --color-none: #FFFFFF;
       --color-link: 9281FD;
       
-      --font-primary: 'Roboto Slab', sans-serif;
+      --font-primary: 'Roboto Slab', sans;
       --font-secondary: 'Ubuntu', sans-serif;
       
-      --shadow-foto: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.25));
+      --shadow-foto: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.7));
     }
     
     ul { list-style-type: none; }
