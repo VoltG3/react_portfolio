@@ -10,6 +10,8 @@ excluding SpringBoot and Cisco icons
 
 Favicon creator http://onlinefavicon.com/
 
+Fonts https://fonts.google.com/
+
 #### Dependencies
 `
 yarn add styled-components

@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { GlobalRootStyles} from "./GlobalRootStyles.js"
+import { GlobalFontStyles } from "./GlobalFontStyles.js"
 
 import SectionHeader from "./sections/SectionHeader.js"
 import SectionInfo from "./sections/SectionInfo.js"
@@ -15,6 +16,7 @@ function App() {
   return (
       <StyledAppContainer>
           <GlobalRootStyles />
+          <GlobalFontStyles />
               <SectionHeader />
               <SectionInfo />
               <SectionDev />
