@@ -108,7 +108,8 @@ export const GlobalFontStyles = createGlobalStyle`
           font-size: 20px;
           line-height: 26px;
           letter-spacing: 0.02em;
-      color: var(--color-primary);
-      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      padding-left: 30px;
+      color: var(--color-secondary);
+      text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.7);
     }
 `

@@ -14,6 +14,13 @@ export const GlobalRootStyles = createGlobalStyle`
       --font-secondary: 'Ubuntu', sans-serif;
       
       --shadow-foto: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.7));
+      
+      --icon-filter-dark: invert(25%)
+                          sepia(9%)
+                          saturate(6474%)
+                          hue-rotate(142deg)
+                          brightness(96%)
+                          contrast(96%);
     }
     
     ul { list-style-type: none; }
