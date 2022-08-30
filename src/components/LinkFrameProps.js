@@ -35,14 +35,14 @@ const StyledLinkFrame = styled.div`
   }
 `
 
-export default function LinkFrameProps() {
+export default function LinkFrameProps(props) {
     return (
         <StyledLinkFrameContainer>
-            <img className="cover" src={ img_designSketcUp }  alt="img" />
+            <img className="cover" src={ props.img }  alt="img" />
 
             <StyledLinkFrame>
                 <p className="linkFrame-textline-light">
-                    Google SketchUp - presentasjon
+                    { props.header}
                 </p>
 
                 <img className="iconBtn" src={ IconGoogleDriver }  alt="icon" />
