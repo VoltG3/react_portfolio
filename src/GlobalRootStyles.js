@@ -21,6 +21,13 @@ export const GlobalRootStyles = createGlobalStyle`
                           hue-rotate(142deg)
                           brightness(96%)
                           contrast(96%);
+      
+      --icon-filter-light: invert(100%)
+                            sepia(16%)
+                            saturate(7463%)
+                            hue-rotate(222deg)
+                            brightness(119%)
+                            contrast(115%);
     }
     
     ul { list-style-type: none; }
