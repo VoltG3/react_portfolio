@@ -6,7 +6,7 @@ export const StyledSectionHeaderContainer = styled.div`
   align-items: center;
       width: 1440px;
       height: 500px;
-  border-bottom: solid 1px var(--color-default);
+  //border-bottom: solid 1px var(--color-default);
 `
 
 export const StyledHeaderInner = styled.div`
@@ -25,7 +25,7 @@ export const StyledHeaderLine = styled.div`
     width: 880px;
     height: 68px;
   margin: 191px 0 0 0;
-  filter: var(--shadow-foto);
+  filter: var(--shadow-frame);
   background: var(--color-secondary);
 `
 
@@ -38,7 +38,7 @@ export const StyledHeaderImg = styled.div`
     width: 280px;
     height: 280px;
   margin: 15px 0 0 47px;
-  filter: var(--shadow-foto);
+  filter: var(--shadow-frame);
   background: var(--color-default);
   
   img {

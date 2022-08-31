@@ -13,7 +13,7 @@ export const GlobalRootStyles = createGlobalStyle`
       --font-primary: 'Roboto Slab', sans;
       --font-secondary: 'Ubuntu', sans-serif;
       
-      --shadow-foto: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.7));
+      --shadow-frame: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.7));
       
       --icon-filter-dark: invert(25%)
                           sepia(9%)

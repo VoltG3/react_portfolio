@@ -1,52 +1,70 @@
-import styled from "styled-components"
-
 import IconGoogleDriver from '../img/iconsBtn/icon_googlrdriver.png'
-import img_designSketcUp from '../img/covers/design_google_sketchup_presentasjon.png'
+import IconGitHub from '../img/iconsBtn/icon_github.png'
+import IconFigma from '../img/iconsBtn/icon_figma.png'
 
-const StyledLinkFrameContainer = styled.div`
-      width: 545px;
-      height: 363px;
-  filter: var(--shadow-foto);
-  
-   .cover {
-        width: inherit;
-        height: inherit;
-    object-fit: cover;
-    border: solid 1px var(--color-secondary);
-  }
-`
-
-const StyledLinkFrame = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-    width: inherit;
-    height: 49px;
-  margin-top: -6px;
-  background: var(--color-none);
-  border: solid 1px var(--color-secondary);
-  
-  .iconBtn {
-      width: 39px;
-      height: 37px;
-    margin: 0 15px 0 0;
-    filter: var(--icon-filter-dark);
-  }
-`
-
-export default function LinkFrame() {
+export default function LinkFrame(props) {
     return (
-        <StyledLinkFrameContainer>
-            <img className="cover" src={ img_designSketcUp }  alt="img" />
+        <div>
+            <img src={ props.img }  alt="img"
+                 style={{
+                    width: props.width,
+                    height: props.height,
+                    //objectFit: 'cover',
+                    border: props.type === "dev"
+                        ? 'solid 1px var(--color-default)'
+                        : 'solid 1px var(--color-secondary)',
+                    filter: 'var(--shadow-frame)'
+            }} />
 
-            <StyledLinkFrame>
-                <p className="linkFrame-textline-dark">
-                    Google SketchUp - presentasjon
+            <div
+                style={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    height: '49px',
+                    marginTop: '-6px',
+                    filter: 'var(--shadow-frame)',
+                    width: props.width,
+                    background: props.type === 'dev'
+                        ? 'var(--color-secondary)'
+                        : 'var(--color-none)',
+                    border: props.type === 'dev'
+                        ? 'solid 1px var(--color-default)'
+                        : 'solid 1px var(--color-secondary)'
+                }}>
+
+                <p className="linkFrame-textline-light"
+                   style={{
+                       color: props.type === 'dev'
+                           ? 'var(--color-none)'
+                           : 'var(--color-secondary)'
+                   }}>
+
+                    { props.header }
                 </p>
 
-                <img className="iconBtn" src={ IconGoogleDriver }  alt="icon" />
-            </StyledLinkFrame>
-        </StyledLinkFrameContainer>
+                <img src={
+                    props.subtype === "design"
+                        ? IconGoogleDriver
+                        : props.subtype === "github"
+                            ? IconGitHub
+                            : props.subtype === "figma"
+                                ? IconFigma
+                                : IconFigma
+
+                }  alt="icon"
+
+
+                     style={{
+                         width: '39px',
+                         height: '37px',
+                         margin: '0 15px 0 0',
+                         filter: props.type === 'dev'
+                             ? 'var(--icon-filter-light)'
+                             : 'var(--icon-filter-dark)'
+                     }}/>
+            </div>
+        </div>
     )
 }

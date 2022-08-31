@@ -98,7 +98,7 @@ export const GlobalFontStyles = createGlobalStyle`
           line-height: 26px;
           letter-spacing: 0.02em;
       padding-left: 30px;
-      color: var(--color-none);
+      //color: var(--color-none);
       text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
@@ -110,7 +110,7 @@ export const GlobalFontStyles = createGlobalStyle`
           line-height: 26px;
           letter-spacing: 0.02em;
       padding-left: 30px;
-      color: var(--color-secondary);
+      //color: var(--color-secondary);
       text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.7);
     }
 `
