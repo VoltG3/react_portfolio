@@ -9,6 +9,8 @@ export const GlobalRootStyles = createGlobalStyle`
       --color-default: #F5F5F5;
       --color-none: #FFFFFF;
       --color-link: 9281FD;
+      --color-hover-dev: red;
+      --color-hover-design: yellow;
       
       --font-primary: 'Roboto Slab', sans;
       --font-secondary: 'Ubuntu', sans-serif;
@@ -31,4 +33,5 @@ export const GlobalRootStyles = createGlobalStyle`
     }
     
     ul { list-style-type: none; }
+    a { text-decoration: none; }
 `
