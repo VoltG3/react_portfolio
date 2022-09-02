@@ -12,6 +12,13 @@ export const StyledContentContainer = styled.div`
     display: flex;
     align-self: flex-end;
   }
+  
+  img {
+    &:hover {
+      opacity: 0.3;
+      filter: var(--icon-filter-light);
+    }
+  }
 `
 
 export const StyledSectionInfoContainer = styled.div`

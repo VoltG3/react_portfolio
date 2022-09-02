@@ -9,6 +9,8 @@ import dev_html_frontendmentor from "../img/covers/dev_html_frontendmentor_moder
 
 import { Link } from 'react-router-dom'
 
+import IconArrow from '../img/iconsBtn/icons_arrow.png'
+
 export default function DevExtension() {
     return (
         <>
@@ -22,12 +24,14 @@ export default function DevExtension() {
 
             <StyledContentContainer>
                 <Link to="/default">
-                    <div style={{
-                        width: '88px',
-                        height: '74px',
-                        border:'solid 3px red',
-                        margin: '0 29px 29px 0'
-                    }}></div>
+                    <img
+                        src={ IconArrow }
+                        alt="arrow"
+                        style={{
+                            transform: 'scaleX(-1)',
+                            filter: 'var(--icon-filter-light)'
+                        }}
+                    />
                 </Link>
             </StyledContentContainer>
         </>

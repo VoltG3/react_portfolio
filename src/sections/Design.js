@@ -8,6 +8,8 @@ import design_google_sketchup_presentasjon from "../img/covers/design_google_ske
 
 import { Link } from 'react-router-dom'
 
+import IconArrow from '../img/iconsBtn/icons_arrow.png'
+
 export default function Design() {
     return (
         <>
@@ -27,12 +29,13 @@ export default function Design() {
 
             <StyledContentContainer>
                 <Link to="/designextension">
-                    <div style={{
-                        width: '88px',
-                        height: '74px',
-                        border:'solid 3px red',
-                        margin: '0 29px 29px 0'
-                    }}></div>
+                    <img
+                        src={ IconArrow }
+                        alt="arrow"
+                        style={{
+                            filter: 'var(--icon-filter-dark)'
+                        }}
+                    />
                 </Link>
             </StyledContentContainer>
         </>
