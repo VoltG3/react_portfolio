@@ -2,6 +2,8 @@ import {
     StyledContentContainer,
     StyledSectionInfoContainer } from './Info.style'
 
+import { Link } from 'react-router-dom'
+
 export default function Info() {
     return (
         <>
@@ -32,12 +34,14 @@ export default function Info() {
             </StyledSectionInfoContainer>
 
             <StyledContentContainer>
-                <div style={{
-                    width: '88px',
-                    height: '74px',
-                    border:'solid 3px red',
-                    margin: '0 29px 29px 0'
-                }}></div>
+                <Link to="/infoextension">
+                    <div style={{
+                        width: '88px',
+                        height: '74px',
+                        border:'solid 3px red',
+                        margin: '0 29px 29px 0'
+                    }}></div>
+                </Link>
             </StyledContentContainer>
         </>
     )
