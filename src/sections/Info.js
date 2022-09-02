@@ -5,6 +5,7 @@ import {
 import { Link } from 'react-router-dom'
 
 import IconArrow from '../img/iconsBtn/icons_arrow.png'
+import BtnArrow from '../components/BtnArrow'
 
 export default function Info() {
     return (
@@ -34,6 +35,11 @@ export default function Info() {
                     </p>
                 </div>
             </StyledSectionInfoContainer>
+
+            <BtnArrow
+                theme={"light"}
+                link={"/infoextension"}
+            />
 
             <StyledContentContainer>
                 <Link to="/infoextension">

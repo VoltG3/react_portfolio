@@ -30,6 +30,10 @@ export const GlobalRootStyles = createGlobalStyle`
                             hue-rotate(222deg)
                             brightness(119%)
                             contrast(115%);
+      
+      .btnArrowHover:hover {
+        opacity: 0.3;
+      }
     }
     
     ul { list-style-type: none; }
