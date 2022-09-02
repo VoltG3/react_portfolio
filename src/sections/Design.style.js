@@ -1,12 +1,27 @@
 import styled from 'styled-components'
 
+export const StyledContentContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  width: 1440px;
+  height: auto;
+  // border: solid 1px red;
+  background: var(--color-none);
+
+  div:nth-child(2) {
+    display: flex;
+    align-self: flex-end;
+  }
+`
+
 export const StyledSectionDesignContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
       width: 1440px;
       height: auto;
-  padding: 160px 0 160px 0;
+  padding: 160px 0 57px 0;
   background: var(--color-none);
 `
 export const StyledDesignCoversContainer = styled.div`
