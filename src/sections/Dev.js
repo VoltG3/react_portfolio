@@ -1,20 +1,22 @@
 import {
-    StyledContentContainer,
     StyledSectionDevContainer,
     StyledDevCoversContainer } from './Dev.style'
 import LinkFrame from '../components/LinkFrame'
+import BtnArrow from "../components/BtnArrow";
 
 import dev_js_array from '../img/covers/dev_js_array.png'
 import dev_figma_space from '../img/covers/dev_figma_space.png'
 import dev_html_frontendmentor from '../img/covers/dev_html_frontendmentor_modern_art_gallery.png'
 
-import { Link } from 'react-router-dom'
-
-import IconArrow from '../img/iconsBtn/icons_arrow.png'
-
 export default function Dev() {
     return (
        <>
+           <BtnArrow
+               theme={"dark"}
+               link={"/devextension"}
+               direction={"right"}
+           />
+
            <StyledSectionDevContainer>
                <StyledDevCoversContainer>
                    <LinkFrame
@@ -49,18 +51,6 @@ export default function Dev() {
 
                </StyledDevCoversContainer>
            </StyledSectionDevContainer>
-
-           <StyledContentContainer>
-               <Link to="/devextension">
-                   <img
-                       src={ IconArrow }
-                       alt="arrow"
-                       style={{
-                           filter: 'var(--icon-filter-light)'
-                       }}
-                   />
-               </Link>
-           </StyledContentContainer>
        </>
     )
 }

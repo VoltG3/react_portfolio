@@ -1,18 +1,21 @@
 import {
-    StyledContentContainer,
     StyledSectionDesignContainer,
     StyledDesignCoversContainer } from './Design.style'
+
 import LinkFrame from '../components/LinkFrame'
+import BtnArrow from '../components/BtnArrow'
 
-import design_google_sketchup_presentasjon from "../img/covers/design_google_sketchup_presentasjon.png";
-
-import { Link } from 'react-router-dom'
-
-import IconArrow from '../img/iconsBtn/icons_arrow.png'
+import design_google_sketchup_presentasjon from '../img/covers/design_google_sketchup_presentasjon.png'
 
 export default function Design() {
     return (
         <>
+            <BtnArrow
+                theme={"light"}
+                link={"/designextension"}
+                direction={"right"}
+            />
+
             <StyledSectionDesignContainer>
                 <StyledDesignCoversContainer>
                     <LinkFrame
@@ -26,18 +29,6 @@ export default function Design() {
                     />
                 </StyledDesignCoversContainer>
             </StyledSectionDesignContainer>
-
-            <StyledContentContainer>
-                <Link to="/designextension">
-                    <img
-                        src={ IconArrow }
-                        alt="arrow"
-                        style={{
-                            filter: 'var(--icon-filter-dark)'
-                        }}
-                    />
-                </Link>
-            </StyledContentContainer>
         </>
     )
 }

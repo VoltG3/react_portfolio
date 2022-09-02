@@ -6,7 +6,7 @@ export const StyledSectionHeaderContainer = styled.div`
   align-items: center;
       width: 1440px;
       height: 500px;
-  //border-bottom: solid 1px var(--color-default);
+  border-bottom: solid 1px var(--color-default);
 `
 
 export const StyledHeaderInner = styled.div`

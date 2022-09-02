@@ -27,13 +27,8 @@ export const StyledFooterInner = styled.div`
       width: 47px;
       height: 50px;
     margin: 0 16px 55px 0;
-    filter: 
-            invert(100%) 
-            sepia(16%) 
-            saturate(7463%)
-            hue-rotate(222deg) 
-            brightness(119%) 
-            contrast(115%);
+    filter: var(--icon-filter-light);
+           
   }
 `
 

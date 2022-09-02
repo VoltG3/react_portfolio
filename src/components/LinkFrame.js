@@ -50,9 +50,11 @@ export default function LinkFrame(props) {
                             : 'var(--color-none)',
                         cursor: 'pointer',
                         transition: '0.15s all ease-in-out',
-                        backgroundColor: isHovering ? isDevOrDesignSection(props.type) : props.type === 'dev'
-                            ? 'var(--color-secondary)'
-                            : 'var(--color-none)',
+                        backgroundColor: isHovering
+                            ? isDevOrDesignSection(props.type)
+                            : props.type === 'dev'
+                                ? 'var(--color-secondary)'
+                                : 'var(--color-none)',
                         border: props.type === 'dev'
                             ? 'solid 1px var(--color-default)'
                             : 'solid 1px var(--color-secondary)'

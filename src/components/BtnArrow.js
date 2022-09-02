@@ -16,13 +16,19 @@ export default function BtnArrow(props) {
         >
             <Link to={ props.link }>
                 <img className="btnArrowHover"
-                    src={ IconArrow }
-                    alt="arrow"
-                    style={{
-                        filter: props.theme === "light"
-                            ? 'var(--icon-filter-dark)'
-                            : 'var(--icon-filter-light)'
-                    }}
+                     src={ IconArrow }
+                     alt="arrow"
+                     style={{
+                         filter: props.theme === "light"
+                             ? 'var(--icon-filter-dark)'
+                             : 'var(--icon-filter-light)',
+                         transform: props.direction === "right"
+                             ? 'scaleX(1)'
+                             : 'scaleX(-1)',
+                         padding: props.direction === "right"
+                             ? '29px 29px 0 0'
+                             :  '29px 0 0 29px'
+                     }}
                 />
             </Link>
         </div>

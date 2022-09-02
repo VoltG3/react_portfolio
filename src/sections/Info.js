@@ -1,15 +1,15 @@
-import {
-    StyledContentContainer,
-    StyledSectionInfoContainer } from './Info.style'
-
-import { Link } from 'react-router-dom'
-
-import IconArrow from '../img/iconsBtn/icons_arrow.png'
+import { StyledSectionInfoContainer } from './Info.style'
 import BtnArrow from '../components/BtnArrow'
 
 export default function Info() {
     return (
         <>
+            <BtnArrow
+                theme={"light"}
+                link={"/infoextension"}
+                direction={"right"}
+            />
+
             <StyledSectionInfoContainer>
                 <div>
                     <p className="sectionInfo-textline-textcontent">
@@ -35,23 +35,6 @@ export default function Info() {
                     </p>
                 </div>
             </StyledSectionInfoContainer>
-
-            <BtnArrow
-                theme={"light"}
-                link={"/infoextension"}
-            />
-
-            <StyledContentContainer>
-                <Link to="/infoextension">
-                    <img
-                        src={ IconArrow }
-                        alt="arrow"
-                        style={{
-                            filter: 'var(--icon-filter-dark)',
-                        }}
-                    />
-                </Link>
-            </StyledContentContainer>
         </>
     )
 }

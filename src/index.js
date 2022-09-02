@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
+
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+
 import App from './App'
 import Default from './routes/Default'
 import InfoExtension from './routes/InfoExtension'

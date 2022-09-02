@@ -38,6 +38,7 @@ export const GlobalFontStyles = createGlobalStyle`
           font-size: 26px;
           line-height: 36px;
           letter-spacing: 0.04em;
+      padding: 0 87px 0 87px;
       color: var(--color-primary);
     }
     
@@ -99,7 +100,7 @@ export const GlobalFontStyles = createGlobalStyle`
           letter-spacing: 0.02em;
       padding-left: 30px;
       //color: var(--color-none);
-      text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      //text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     .linkFrame-textline-dark {
@@ -111,6 +112,6 @@ export const GlobalFontStyles = createGlobalStyle`
           letter-spacing: 0.02em;
       padding-left: 30px;
       //color: var(--color-secondary);
-      text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.7);
+      //text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.7);
     }
 `

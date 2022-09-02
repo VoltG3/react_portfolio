@@ -1,34 +1,40 @@
-import {
-    StyledContentContainer,
-    StyledSectionInfoContainer} from './Info.style'
-
-import { Link } from 'react-router-dom'
-
-import IconArrow from '../img/iconsBtn/icons_arrow.png'
+import { StyledSectionInfoContainer } from './Info.style'
+import BtnArrow from '../components/BtnArrow'
 
 export default function InfoExtension() {
     return (
         <>
+            <BtnArrow
+                theme={"light"}
+                link={"/default"}
+                direction={"left"}
+            />
+
             <StyledSectionInfoContainer>
                 <div>
+                    <p className="sectionInfo-textline-textcontent">
+                        Jeg har vært opptatt av IT siden middelalderen: MS-DOS / Win 3.1
+                    </p>
 
-                    <p>extension</p>
+                    <p className="sectionInfo-textline-textcontent">
+                        På tiden lærer jeg mye på egen hånd om JavaScript og Java. Jeg
+                        liker å samarbeide i gruppe. Fordypning inn i stadige utfordringer
+                        i problemløsninger.
+                    </p>
 
+                    <p className="sectionInfo-textline-textcontent">
+                        Mine hobbyer er historie før steinalderen, eksperimentell arkeologi
+                        og å spille munnharpa.
+                    </p>
+
+                    <p className="sectionInfo-textline-textcontent">
+                        Jeg trivers med å utforske det metanivået av programmer samt
+                        interaksjoner og sammenheger gjennom de. Har hat diverse basic
+                        kurs inni i BackEnd, CLI-Linux. Ser frem etter en miljø hvor
+                        jeg kan bidra og etterhvert vokse til FullStack.
+                    </p>
                 </div>
             </StyledSectionInfoContainer>
-
-            <StyledContentContainer>
-                <Link to="/default">
-                    <img
-                        src={ IconArrow }
-                        alt="arrow"
-                        style={{
-                            transform: 'scaleX(-1)',
-                            filter: 'var(--icon-filter-dark)'
-                         }}
-                    />
-                </Link>
-            </StyledContentContainer>
         </>
     )
 }
