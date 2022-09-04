@@ -13,6 +13,7 @@ Fonts https://fonts.google.com/
 Color Palettes https://colorhunt.co/  
 Img *.jpg converting https://onlineconvertfree.com/convert/jpg/  
 Img compressing https://tinypng.com/  
+Img compressing https://www.iloveimg.com/compress-image above 5mb   
 Convert color to filter https://codepen.io/sosuke/pen/Pjoqqp  
 Crop img https://www.iloveimg.com/crop-image/crop-png  
 Img converting *.png to *.svg https://convertio.co/png-svg/

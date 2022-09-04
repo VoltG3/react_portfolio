@@ -6,11 +6,11 @@ import LinkFrame from '../components/LinkFrame'
 import BtnArrow from '../components/BtnArrow'
 
 import design_book from '../img/covers/design_book.jpg'
-import design_arangment_feiring from '../img/covers/design_arangment_fest.jpg'
-import design_ticket_sankthansfeiring from '../img/covers/design_ticket_santhansfeiring.jpg'
-import design_arangment_teater from '../img/covers/design_arangment_teater.jpg'
+import design_plakat_arrangment from '../img/covers/design_plakat_arrangment.jpg'
+import design_ticket_sankthansfeiring from '../img/covers/design_ticket_sankthansfeiring.jpg'
+import design_plakat_soloforestilling from '../img/covers/design_plakat_soloforestilling.jpg'
 import design_3d_makett from '../img/covers/design_3d_makett.png'
-import design_japan from '../img/covers/design_japan.jpg'
+import design_plakat_japan from '../img/covers/design_plakat_japan.jpg'
 import design_google_sketchup_presentasjon from '../img/covers/design_google_sketchup_presentasjon.png'
 import design_postkort from '../img/covers/design_postkort.jpg'
 
@@ -33,7 +33,7 @@ export default function DesignExtension() {
                         subtype={"design"}
                         img={ design_book }
                         header={"Book design"}
-                        /*link={""}*/
+                        link={"https://drive.google.com/drive/folders/1oQIGsrE9Md_1Yo3Hxw0eVYnta81OSm_Q?usp=sharing"}
                         width={"550px"}
                         height={"350px"}
                     />
@@ -42,8 +42,8 @@ export default function DesignExtension() {
                         type={"design"}
                         subtype={"design"}
                         img={ design_ticket_sankthansfeiring }
-                        header={"Arangment Tiket - Sankt Hans Feiring"}
-                        /*link={""}*/
+                        header={"Arangment Tiket - SanktHansFeiring"}
+                        link={"https://drive.google.com/file/d/1pZHx_XVqvgkOq3p7Ug6THvzoezgVXLqR/view?usp=sharing"}
                         width={"550px"}
                         height={"200px"}
                     />
@@ -51,9 +51,9 @@ export default function DesignExtension() {
                     <LinkFrame
                         type={"design"}
                         subtype={"design"}
-                        img={ design_arangment_feiring }
+                        img={ design_plakat_arrangment }
                         header={"Arangment Plakat"}
-                        /*link={""}*/
+                        link={"https://drive.google.com/file/d/1iKQYO9nusessgChTcYg9CUH185sohLZX/view?usp=sharing"}
                         width={"450px"}
                         height={"781px"}
                     />
@@ -63,9 +63,9 @@ export default function DesignExtension() {
                     <LinkFrame
                         type={"design"}
                         subtype={"design"}
-                        img={ design_arangment_teater }
-                        header={"Arangment Plakat"}
-                        /*link={""}*/
+                        img={ design_plakat_soloforestilling }
+                        header={"Arangment Plakat - soloforestilling"}
+                        link={"https://drive.google.com/file/d/1dP4MbIjepWaeI-qUGxLB29GyAWIDEwLD/view?usp=sharing"}
                         width={"550px"}
                         height={"781px"}
                     />
@@ -75,7 +75,7 @@ export default function DesignExtension() {
                         subtype={"design"}
                         img={ design_3d_makett }
                         header={"3D Modell"}
-                        /*link={""}*/
+                        link={"https://drive.google.com/drive/folders/1_axoOFW-hXBuAUPpXynPXtj_7KqwuawJ?usp=sharing"}
                         width={"450px"}
                         height={"300px"}
                     />
@@ -83,9 +83,9 @@ export default function DesignExtension() {
                     <LinkFrame
                         type={"design"}
                         subtype={"design"}
-                        img={ design_japan }
+                        img={ design_plakat_japan }
                         header={"Plakat"}
-                        /*link={""}*/
+                        link={"https://drive.google.com/file/d/1dP4MbIjepWaeI-qUGxLB29GyAWIDEwLD/view?usp=sharing"}
                         width={"450px"}
                         height={"250px"}
                     />
