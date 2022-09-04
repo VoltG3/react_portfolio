@@ -22,11 +22,13 @@ Img converting *.png to *.svg https://convertio.co/png-svg/
 #### Versions
 `
 portfolio-v1.0 - lite onepage version
+portfolio-v1.1 - full desktop version
 `
 
 #### Dependencies
 `
 yarn add styled-components
+yarn add react-router-dom@6
 `
 
 - [styled-components](https://www.npmjs.com/package/styled-components)

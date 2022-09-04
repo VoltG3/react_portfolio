@@ -9,8 +9,10 @@ export const GlobalRootStyles = createGlobalStyle`
     --color-default: #F5F5F5;
     --color-none: #FFFFFF;
     --color-link: #9281FD;
+    --color-link-hover: #4a31e3;
     --color-hover-dev: red;
     --color-hover-design: yellow;
+    --color-empty-frame: gray;
 
     --font-primary: 'Roboto Slab', sans;
     --font-secondary: 'Ubuntu', sans-serif;
@@ -21,7 +23,7 @@ export const GlobalRootStyles = createGlobalStyle`
     --icon-filter-light: invert(100%) sepia(16%) saturate(7463%) hue-rotate(222deg) brightness(119%) contrast(115%);
   }
 
-  
+
   ul {
     list-style-type: none;
   }

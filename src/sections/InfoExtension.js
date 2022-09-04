@@ -1,5 +1,8 @@
-import { StyledSectionInfoContainer } from './Info.style'
+import {
+    StyledSectionInfoContainer,
+    StyledInfoCellsContainer } from './Info.style'
 import BtnArrow from '../components/BtnArrow'
+import InfoCell from '../components/InfoCell'
 
 export default function InfoExtension() {
     return (
@@ -34,6 +37,40 @@ export default function InfoExtension() {
                         jeg kan bidra og etterhvert vokse til FullStack.
                     </p>
                 </div>
+
+                <StyledInfoCellsContainer>
+                    <InfoCell
+                        cellHeader = {"Front-End"}
+                        textLine01 = {"JobLoop, 1 år,"}
+                        linkHref01 = {"www.kodehode.no"}
+                        textLine02 = {""}
+                        linkHref02 = {""}
+                    />
+
+                    <InfoCell
+                        cellHeader = {"Tehnisk"}
+                        textLine01 = {"IBM PC Maintenance, 3 måneder"}
+                        linkHref01 = {""}
+                        textLine02 = {"Praksis,"}
+                        linkHref02 = {"www.infocare.com/no"}
+                    />
+
+                    <InfoCell
+                        cellHeader = {"Back-End"}
+                        textLine01 = {"Programmering, 960 timer, "}
+                        linkHref01 = {"www.ltpc.lv/"}
+                        textLine02 = {"Praksis,"}
+                        linkHref02 = {"www.diggecard.no/"}
+                    />
+
+                    <InfoCell
+                        cellHeader = {"Design"}
+                        textLine01 = {"Multimedie design, 960 timer,"}
+                        linkHref01 = {"www.ltpc.lv/"}
+                        textLine02 = {"Frivilig praksis,"}
+                        linkHref02 = {"www.latviesibergena.no/"}
+                    />
+                </StyledInfoCellsContainer>
             </StyledSectionInfoContainer>
         </>
     )

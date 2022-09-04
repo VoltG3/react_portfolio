@@ -13,3 +13,15 @@ export const StyledSectionInfoContainer = styled.div`
     flex-direction: column;
   }
 `
+
+export const StyledInfoCellsContainer = styled.div`
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+    gap: 64px;
+  grid-template-areas:
+  ". ."
+  ". .";
+  
+  padding: 50px 87px 0 87px;
+`

@@ -42,15 +42,41 @@ export const GlobalFontStyles = createGlobalStyle`
       color: var(--color-primary);
     }
     
-    .sectionInfo-textline-subsection-textcontent {
+    .sectionInfo-textline-subsection-infocell-header {
       font-family: var(--font-primary);
           font-style: normal;
-          font-weight: 400;
+          font-weight: 600;
           font-size: 26px;
           line-height: 34px;
           letter-spacing: 0.02em;
+      text-align: center;
+      margin: 5px 0 5px 0;
       color: var(--color-primary);
     }
+
+    .sectionInfo-textline-subsection-infocell-textcontent {
+      font-family: var(--font-secondary);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 34px;
+      letter-spacing: 0.02em;
+      margin: 5px 15px 5px 15px;
+      color: var(--color-primary);
+    }
+    
+    .sectionInfo-infocell-link {
+      font-family: var(--font-secondary);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 34px;
+      letter-spacing: 0.02em;
+      margin: 5px 15px 5px 15px;
+      color: var(--color-link);
+    } .sectionInfo-infocell-link:hover {
+      color: var(--color-link-hover);
+      }
     
     .sectionFooter-textline-header {
       font-family: var(--font-primary);
@@ -70,7 +96,8 @@ export const GlobalFontStyles = createGlobalStyle`
           line-height: 26px;
           letter-spacing: 0.04em;
       color: var(--color-none);
-    }
+    } .sectionFooter-textline-credentials a { color: var(--color-none); }
+      .sectionFooter-textline-credentials a:hover { color: var(--color-primary); }
 
     .sectionFooter-textline-list {
       font-family: var(--font-primary);

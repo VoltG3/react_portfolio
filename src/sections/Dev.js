@@ -25,8 +25,8 @@ export default function Dev() {
                        img={ dev_js_array }
                        header={"Vanilla JS - Array"}
                        link={"https://github.com/VoltG3/javascript/tree/master/js_array"}
-                       width={"468px"}
-                       height={"248px"}
+                       width={"500px"}
+                       height={"250px"}
                    />
 
                    <LinkFrame
@@ -35,8 +35,8 @@ export default function Dev() {
                        img={ dev_figma_space }
                        header={"Figma - Space"}
                        link={"https://www.figma.com/file/AeGc0WPx3n0DrSGjq3gyvG/Space?node-id=0%3A1"}
-                       width={"468px"}
-                       height={"248px"}
+                       width={"500px"}
+                       height={"250px"}
                    />
 
                    <LinkFrame
@@ -45,8 +45,8 @@ export default function Dev() {
                        img={ dev_html_frontendmentor }
                        header={"HTML - FrontEndMentor"}
                        link={"https://github.com/VoltG3/html_frontendmentor/tree/master/modern_art_gallery"}
-                       width={"365px"}
-                       height={"578px"}
+                       width={"400px"}
+                       height={"581px"}
                    />
 
                </StyledDevCoversContainer>

@@ -21,6 +21,12 @@ export default function LinkFrame(props) {
         else return 'var(--color-hover-design)'
     }
 
+    const isLinkNull = () => {
+        if(props.link === undefined)
+        return 'not-allowed'
+        else return 'pinter'
+    }
+
     return (
         <div>
             <img src={ props.img }  alt="img"
@@ -41,14 +47,14 @@ export default function LinkFrame(props) {
                         flexDirection: 'row',
                         justifyContent: 'space-between',
                         alignItems: 'center',
-                        height: '49px',
+                        height: '50px',
                         marginTop: '-6px',
                         filter: 'var(--shadow-frame)',
                         width: props.width,
                         background: props.type === 'dev'
                             ? 'var(--color-secondary)'
                             : 'var(--color-none)',
-                        cursor: 'pointer',
+                        cursor: isLinkNull(props.link),
                         transition: '0.15s all ease-in-out',
                         backgroundColor: isHovering
                             ? isDevOrDesignSection(props.type)
