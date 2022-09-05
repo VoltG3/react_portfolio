@@ -50,7 +50,7 @@ export default function Footer() {
                         <tr>
                             <td>github:</td>
                             <td style={{ paddingLeft: '10px'}}></td>
-                            <td><a href="https://github.com/VoltG3?tab=repositories" target="_blank">VoltG3</a></td>
+                            <td><a href="https://github.com/VoltG3?tab=repositories" target="_blank" rel="noopener noreferrer">VoltG3</a></td>
                         </tr>
                         </tbody>
                     </table>

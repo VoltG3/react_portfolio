@@ -40,7 +40,7 @@ export default function LinkFrame(props) {
                     filter: 'var(--shadow-frame)'
             }} />
 
-            <a href={ props.link } target="_blank">
+            <a href={ props.link } target="_blank" rel="noopener noreferrer">
                 <div
                     style={{
                         display: 'flex',
