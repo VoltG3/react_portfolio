@@ -40,7 +40,12 @@ export const GlobalFontStyles = createGlobalStyle`
           letter-spacing: 0.04em;
       padding: 0 87px 0 87px;
       color: var(--color-primary);
-    }
+
+          @media screen and (max-width: 992px) { 
+            font-size: 22px;
+            line-height: 28px;
+          }
+      }
     
     .sectionInfo-textline-subsection-infocell-header {
       font-family: var(--font-primary);
@@ -52,7 +57,12 @@ export const GlobalFontStyles = createGlobalStyle`
       text-align: center;
       margin: 5px 0 5px 0;
       color: var(--color-primary);
-    }
+
+          @media screen and (max-width: 992px) {
+            font-weight: 400;
+            font-size: 22px;
+          }
+      }
 
     .sectionInfo-textline-subsection-infocell-textcontent {
       font-family: var(--font-secondary);
@@ -63,6 +73,11 @@ export const GlobalFontStyles = createGlobalStyle`
       letter-spacing: 0.02em;
       margin: 5px 15px 5px 15px;
       color: var(--color-primary);
+
+        @media screen and (max-width: 992px) { 
+          font-size: 18px;
+          line-height: 17px;
+        }
     }
     
     .sectionInfo-infocell-link {
@@ -74,6 +89,12 @@ export const GlobalFontStyles = createGlobalStyle`
       letter-spacing: 0.02em;
       margin: 5px 15px 5px 15px;
       color: var(--color-link);
+
+          @media screen and (max-width: 992px) {
+            font-size: 18px;
+            line-height: 17px;
+          }
+      
     } .sectionInfo-infocell-link:hover {
       color: var(--color-link-hover);
       }
@@ -87,7 +108,7 @@ export const GlobalFontStyles = createGlobalStyle`
       margin: 20px 0 16px 0;
       color: var(--color-none);
     }
-
+    
     .sectionFooter-textline-credentials {
       font-family: var(--font-primary);
           font-style: normal;
@@ -100,15 +121,17 @@ export const GlobalFontStyles = createGlobalStyle`
       .sectionFooter-textline-credentials a:hover { color: var(--color-primary); }
 
     .sectionFooter-textline-list {
+      display: none;
       font-family: var(--font-primary);
           font-style: normal;
           font-weight: 400;
-          font-size: 20px;
-          line-height: 26px;
+          font-size: 16px;
+          line-height: 21px;
           letter-spacing: 0.02em;
       color: var(--color-none);
     }
 
+    // credentials & list
     .sectionFooter-textline-html-credentials {
       font-family: var(--font-primary); 
           font-style: normal;
@@ -116,6 +139,11 @@ export const GlobalFontStyles = createGlobalStyle`
           font-size: 16px;
           line-height: 21px;
       color: var(--color-default);
+
+      @media screen and (max-width: 992px) {
+        font-size: 12px;
+        line-height: 14px;
+      }
     }
     
     .linkFrame-textline-light {

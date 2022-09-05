@@ -6,7 +6,7 @@ export default function InfoCell(props) {
        }}>
            <div
                style={{
-                   width: '600px',
+                   width: 'var(--infoCell-width)',
                    height: 'auto',
                    borderTop: 'solid  2px var(--color-accent)',
                    borderBottom: 'solid 2px var(--color-accent)'

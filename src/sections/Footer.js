@@ -56,6 +56,7 @@ export default function Footer() {
                     </table>
                 </div>
 
+                {/*.sectionFooter-textline-list*/}
                 <ul className="sectionFooter-textline-credentials">
                     <li># Linux</li>
                     <li># HTML</li>

@@ -5,8 +5,9 @@ export const StyledSectionDesignContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-      width: 1440px;
-      height: auto;
+    max-width: 1440px;
+        width: var(--display-width);
+        height: auto;
   padding: 57px 0 160px 0;
   background: var(--color-none);
 `
@@ -24,7 +25,7 @@ export const StyledDesignCoversContainer = styled.div`
     ". . . . A A A A A A A A A A A A . . . .";
 
   & div { background: var(--color-empty-frame); }
-  & div:nth-child(1) { grid-area: A;  } // Video
+  & div:nth-child(1) { grid-area: A;  } & div:nth-child(1) img { width: 600px; height: 350px; } // Video
 `
 
 export const StyledDesignCoversContainerExtension = styled.div`
@@ -49,14 +50,14 @@ export const StyledDesignCoversContainerExtension = styled.div`
     "G G G G G G G G G H H H H H H H H H H H"; // 5
   
   & div { background: var(--color-empty-frame); }
-  & div:nth-child(1) { grid-area: A;  } // Book 
-  & div:nth-child(2) { grid-area: B;  } // Tiket
-  & div:nth-child(3) { grid-area: C;  } // Plakat LV100
+  & div:nth-child(1) { grid-area: A;  } & div:nth-child(1) img { width: 550px; height: 350px; } // Book 
+  & div:nth-child(2) { grid-area: B;  } & div:nth-child(2) img { width: 550px; height: 200px; } // Tiket
+  & div:nth-child(3) { grid-area: C;  } & div:nth-child(3) img { width: 450px; height: 781px; } // Plakat LV100
 
-  & div:nth-child(4) { grid-area: D;  } // Plakat Teater
-  & div:nth-child(5) { grid-area: E;  } // 3D Modell
-  & div:nth-child(6) { grid-area: F;  } // Plakat Japan
+  & div:nth-child(4) { grid-area: D;  } & div:nth-child(4) img { width: 550px; height: 781px; } // Plakat Teater
+  & div:nth-child(5) { grid-area: E;  } & div:nth-child(5) img { width: 450px; height: 300px; } // 3D Modell
+  & div:nth-child(6) { grid-area: F;  } & div:nth-child(6) img { width: 450px; height: 250px; } // Plakat Japan
 
-  & div:nth-child(7) { grid-area: G;  } // Postkort
-  & div:nth-child(8) { grid-area: H;  } // Video
+  & div:nth-child(7) { grid-area: G;  } & div:nth-child(7) img { width: 450px; height: 350px; } // Postkort
+  & div:nth-child(8) { grid-area: H;  } & div:nth-child(8) img { width: 550px; height: 350px; } // Video
 `

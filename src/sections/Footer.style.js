@@ -5,7 +5,7 @@ export const StyledSectionFooterContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-      width: 1440px;
+      width: var(--display-width);
       height: 424px;
 `
 

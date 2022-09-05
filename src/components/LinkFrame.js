@@ -31,8 +31,8 @@ export default function LinkFrame(props) {
         <div>
             <img src={ props.img }  alt="img"
                  style={{
-                    width: props.width,
-                    height: props.height,
+                    /*width: props.width,
+                    height: props.height,*/
                     //objectFit: 'cover',
                     border: props.type === "dev"
                         ? 'solid 1px var(--color-default)'
@@ -50,7 +50,7 @@ export default function LinkFrame(props) {
                         height: '50px',
                         marginTop: '-6px',
                         filter: 'var(--shadow-frame)',
-                        width: props.width,
+                        /*width: props.width,*/
                         background: props.type === 'dev'
                             ? 'var(--color-secondary)'
                             : 'var(--color-none)',

@@ -7,7 +7,7 @@ export default function BtnArrow(props) {
             style={{
                 display: 'flex',
                 justifyContent: 'flex-end',
-                width: '1440px',
+                width: 'var(--display-width)',
                 height: 'auto',
                 background: props.theme === "light"
                     ? 'var(--color-none)'

@@ -21,6 +21,20 @@ export const GlobalRootStyles = createGlobalStyle`
 
     --icon-filter-dark: invert(25%) sepia(9%) saturate(6474%) hue-rotate(142deg) brightness(96%) contrast(96%);
     --icon-filter-light: invert(100%) sepia(16%) saturate(7463%) hue-rotate(222deg) brightness(119%) contrast(115%);
+ 
+    --display-width: 1440px;
+    --section-sidePadding: 160px;
+    --section-bottomPadding: 160px;
+    --infoCell-width: 600px;
+    --infoCell-gap: 64px;
+
+    @media screen and (max-width: 992px) { 
+      --display-width: 992px;
+      --section-sidePadding: 0px;
+      --section-bottomPadding: 30px;
+      --infoCell-width: 380px;
+      --infoCell-gap: 32px;
+    }
   }
 
 

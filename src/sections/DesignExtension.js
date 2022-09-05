@@ -34,8 +34,8 @@ export default function DesignExtension() {
                         img={ design_book }
                         header={"Book design"}
                         link={"https://drive.google.com/drive/folders/1oQIGsrE9Md_1Yo3Hxw0eVYnta81OSm_Q?usp=sharing"}
-                        width={"550px"}
-                        height={"350px"}
+                       /* width={"550px"}
+                        height={"350px"}*/
                     />
 
                     <LinkFrame
@@ -54,8 +54,8 @@ export default function DesignExtension() {
                         img={ design_plakat_arrangment }
                         header={"Arangment Plakat"}
                         link={"https://drive.google.com/file/d/1iKQYO9nusessgChTcYg9CUH185sohLZX/view?usp=sharing"}
-                        width={"450px"}
-                        height={"781px"}
+                       /* width={"450px"}
+                        height={"781px"}*/
                     />
 
                     {/*Second Block*/}
@@ -66,8 +66,8 @@ export default function DesignExtension() {
                         img={ design_plakat_soloforestilling }
                         header={"Arangment Plakat - soloforestilling"}
                         link={"https://drive.google.com/file/d/1dP4MbIjepWaeI-qUGxLB29GyAWIDEwLD/view?usp=sharing"}
-                        width={"550px"}
-                        height={"781px"}
+                       /* width={"550px"}
+                        height={"781px"}*/
                     />
 
                     <LinkFrame
@@ -76,8 +76,8 @@ export default function DesignExtension() {
                         img={ design_3d_makett }
                         header={"3D Modell"}
                         link={"https://drive.google.com/drive/folders/1_axoOFW-hXBuAUPpXynPXtj_7KqwuawJ?usp=sharing"}
-                        width={"450px"}
-                        height={"300px"}
+                        /*width={"450px"}
+                        height={"300px"}*/
                     />
 
                     <LinkFrame
@@ -86,8 +86,8 @@ export default function DesignExtension() {
                         img={ design_plakat_japan }
                         header={"Plakat"}
                         link={"https://drive.google.com/file/d/1dP4MbIjepWaeI-qUGxLB29GyAWIDEwLD/view?usp=sharing"}
-                        width={"450px"}
-                        height={"250px"}
+                       /* width={"450px"}
+                        height={"250px"}*/
                     />
 
                     {/*Third Block*/}
@@ -98,8 +98,8 @@ export default function DesignExtension() {
                         img={ design_postkort }
                         header={"Postkort"}
                         /*link={""}*/
-                        width={"450px"}
-                        height={"350px"}
+                        /*width={"450px"}
+                        height={"350px"}*/
                     />
 
                     <LinkFrame
@@ -108,8 +108,8 @@ export default function DesignExtension() {
                         img={ design_google_sketchup_presentasjon }
                         header={"Google SketchUp - presentasjon"}
                         link={"https://drive.google.com/file/d/1wkv_5bES41PgiHmYlQdr57XqwwKkhLSZ/view?usp=sharing"}
-                        width={"550px"}
-                        height={"350px"}
+                      /*  width={"550px"}
+                        height={"350px"}*/
                     />
                 </StyledDesignCoversContainerExtension>
             </StyledSectionDesignContainer>

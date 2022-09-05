@@ -4,8 +4,9 @@ export const StyledSectionHeaderContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-      width: 1440px;
-      height: 500px;
+    max-width: 1440px;
+        width: var(--display-width);
+        height: 500px;
   border-bottom: solid 1px var(--color-default);
 `
 
