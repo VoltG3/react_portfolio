@@ -8,6 +8,7 @@ export const StyledSectionInfoContainer = styled.div`
         width: var(--display-width);
         height: auto;
   padding: 0 0 var(--section-bottomPadding) 0;
+  background: var(--color-none);
   
   div:nth-child(1) {
     display: flex;

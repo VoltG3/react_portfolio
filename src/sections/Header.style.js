@@ -8,6 +8,7 @@ export const StyledSectionHeaderContainer = styled.div`
         width: var(--display-width);
         height: 500px;
   border-bottom: solid 1px var(--color-default);
+  background: var(--color-none);
 `
 
 export const StyledHeaderInner = styled.div`

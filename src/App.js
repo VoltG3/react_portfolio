@@ -9,7 +9,9 @@ import Footer from './sections/Footer'
 export default function App() {
 
   return (
-      <div>
+      <div style={{
+          paddingTop: '30vh'
+      }}>
           <GlobalRootStyles />
           <GlobalFontStyles />
               <Header />
