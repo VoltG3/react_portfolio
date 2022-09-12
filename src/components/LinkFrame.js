@@ -28,12 +28,18 @@ export default function LinkFrame(props) {
     }
 
     return (
-        <div>
+        <div
+            style={{
+                display: 'flex',
+                flexDirection: 'column',
+                maxWidth: props.width + 'px',
+                maxHeight: props.height + 'px'
+            }}
+        >
             <img src={ props.img }  alt="img"
                  style={{
-                    /*width: props.width,
-                    height: props.height,*/
-                    //objectFit: 'cover',
+                    width: '100%',
+                    height: '100%',
                     border: props.type === "dev"
                         ? 'solid 1px var(--color-default)'
                         : 'solid 1px var(--color-secondary)',
@@ -47,6 +53,7 @@ export default function LinkFrame(props) {
                         flexDirection: 'row',
                         justifyContent: 'space-between',
                         alignItems: 'center',
+                        width: '100%',
                         height: '50px',
                         marginTop: '-6px',
                         filter: 'var(--shadow-frame)',

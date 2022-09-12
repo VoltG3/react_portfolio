@@ -9,7 +9,17 @@ import design_google_sketchup_presentasjon from '../img/covers/design_google_ske
 
 export default function Design() {
     return (
-        <>
+        <div
+            style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                width: '100vw',
+                height: 'auto'
+            }}
+        >
             <BtnArrow
                 theme={"light"}
                 link={"/designextension"}
@@ -24,11 +34,11 @@ export default function Design() {
                         img={ design_google_sketchup_presentasjon }
                         header={"Google SketchUp - presentasjon"}
                         link={"https://drive.google.com/file/d/1wkv_5bES41PgiHmYlQdr57XqwwKkhLSZ/view?usp=sharing"}
-                        /*width={"600px"}
-                        height={"350px"}*/
+                        width={"1440"} //600
+                        height={"800"} //400
                     />
                 </StyledDesignCoversContainer>
             </StyledSectionDesignContainer>
-        </>
+        </div>
     )
 }

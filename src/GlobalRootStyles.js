@@ -28,12 +28,18 @@ export const GlobalRootStyles = createGlobalStyle`
     --infoCell-width: 600px;
     --infoCell-gap: 64px;
 
-    @media screen and (max-width: 992px) { 
+   /* @media screen and (max-width: 992px) { 
       --display-width: 992px;
       --section-sidePadding: 0px;
       --section-bottomPadding: 30px;
       --infoCell-width: 380px;
       --infoCell-gap: 32px;
+    }*/
+    
+    .borderbox {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
     }
   }
 

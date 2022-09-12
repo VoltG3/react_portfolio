@@ -5,8 +5,8 @@ export const StyledSectionDesignContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    max-width: 1440px;
-        width: var(--display-width);
+    max-width: var(--display-width);
+        width: 100%;
         height: auto;
   padding: 57px 0 160px 0;
   background: var(--color-none);
@@ -14,18 +14,12 @@ export const StyledSectionDesignContainer = styled.div`
 
 export const StyledDesignCoversContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(18, auto);
+  grid-template-columns: auto;
   grid-template-rows: auto;
   gap: 30px;
-  width: auto;
-  height: auto;
-  //grid-auto-flow: row;
-  grid-template-areas:
-  // 100 200 300 400 500 600 700 800 900 000
-    ". . . . A A A A A A A A A A A A . . . .";
-
+  
   & div { background: var(--color-empty-frame); }
-  & div:nth-child(1) { grid-area: A;  } & div:nth-child(1) img { width: 600px; height: 350px; } // Video
+  //& div:nth-child(1) img { max-width: 1440px; width: 100%; max-height: 600px; height: 100%; } // Video
 `
 
 export const StyledDesignCoversContainerExtension = styled.div`
