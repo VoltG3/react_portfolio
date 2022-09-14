@@ -7,8 +7,8 @@ export default function BtnArrow(props) {
             style={{
                 display: 'flex',
                 justifyContent: 'flex-end',
-                width: 'var(--display-width)',
-                height: 'auto',
+                width: '100%',
+                height: '85px',
                 background: props.theme === "light"
                     ? 'var(--color-none)'
                     : 'var(--color-secondary)'
@@ -19,6 +19,7 @@ export default function BtnArrow(props) {
                      src={ IconArrow }
                      alt="arrow"
                      style={{
+                         width: 'min(max(5.556vw, 50px), 80px)',
                          filter: props.theme === "light"
                              ? 'var(--icon-filter-dark)'
                              : 'var(--icon-filter-light)',

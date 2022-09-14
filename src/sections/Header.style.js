@@ -1,61 +1,58 @@
 import styled from 'styled-components'
 
-export const StyledSectionHeaderContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-    max-width: 1440px;
-        width: var(--display-width);
-        height: 500px;
-  border-bottom: solid 1px var(--color-default);
-  background: var(--color-none);
-`
-
 export const StyledHeaderInner = styled.div`
   display: flex;
   flex-direction: column;
-    width: 880px;
-    height: 310px;
+    max-width: 880px;
+    max-height: 310px;
+        width: 100%;
+        height: auto;
 `
 
 export const StyledHeaderLine = styled.div`
-  display: flex;
   position: relative;
   z-index: 1;
+  display: flex;
   justify-content: flex-end;
   align-items: center;
-    width: 880px;
-    height: 68px;
-  margin: 191px 0 0 0;
+    max-width: 880px;
+    max-height: 68px;
+        width: 100%;
+        height: min(max(4.722vw, 38px), 68px);
+  margin-top: min(max(12.569vw, 120px), 181px);
   filter: var(--shadow-frame);
   background: var(--color-secondary);
 `
 
 export const StyledHeaderImg = styled.div`
-  display: flex;
   position: absolute;
   z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-    width: 280px;
-    height: 280px;
+    max-width: 265px;
+    max-height: 260px;
+        width: min(max(18.403vw, 180px), 265px);
+        height: min(max(18.056vw, 180px), 260px);
   margin: 15px 0 0 47px;
   filter: var(--shadow-frame);
   background: var(--color-default);
   
   img {
-      width: inherit;
-      height: inherit;
+      width: 100%;
+      height: 100%;
     object-fit: cover;
+    filter: grayscale(70%);
   }
 `
 
 export const StyledHeaderTextContent = styled.div`
-  display: flex;
   position: absolute;
   z-index: 3;
+  display: flex;
   flex-direction: column;
-  margin-left: 350px;
+  margin-left: min(max(24.306vw, 270px), 350px);
   
   p:nth-child(1) { margin: 15px 0 10px 0; }
   p:nth-child(2) { margin: 0; }

@@ -23,36 +23,35 @@ export const GlobalRootStyles = createGlobalStyle`
     --icon-filter-light: invert(100%) sepia(16%) saturate(7463%) hue-rotate(222deg) brightness(119%) contrast(115%);
  
     --display-width: 1440px;
-    --section-sidePadding: 160px;
-    --section-bottomPadding: 160px;
-    --infoCell-width: 600px;
-    --infoCell-gap: 64px;
-
-   /* @media screen and (max-width: 992px) { 
-      --display-width: 992px;
-      --section-sidePadding: 0px;
-      --section-bottomPadding: 30px;
-      --infoCell-width: 380px;
-      --infoCell-gap: 32px;
-    }*/
+    --pagePaddingTop: min(max(30vw, 0px), 432px);
+    --page-padding-top: min(max(3.958vw, 30px), 57px);
+    --page-padding-right: 20px;
+    --page-padding-bottom: min(max(11.111vw, 30px), 160px);
+    --page-padding-left: 20px;
     
-    .borderbox {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
+    .section--template {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        max-width: var(--display-width);
+            width: 100%;
+            height: auto;
+      border-bottom: solid 1px var(--color-default);
     }
   }
-
-
-  ul {
-    list-style-type: none;
-  }
-
-  a {
-    text-decoration: none;
-  }
+  
+  ul { list-style-type: none; }
+  a { text-decoration: none; }
 
   .btnArrowHover:hover {
     opacity: 0.3;
   }
+
+  @media only screen and (max-width: 992px) {
+    :root {
+      --pagePaddingTop: 0px;
+    }
+  }
+  
 `

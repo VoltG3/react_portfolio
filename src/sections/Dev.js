@@ -1,6 +1,5 @@
-import {
-    StyledSectionDevContainer,
-    StyledDevCoversContainer } from './Dev.style'
+import { StyledDevLayout } from './Dev.style'
+
 import LinkFrame from '../components/LinkFrame'
 import BtnArrow from "../components/BtnArrow";
 
@@ -10,23 +9,28 @@ import dev_html_frontendmentor from '../img/covers/dev_html_frontendmentor_moder
 
 export default function Dev() {
     return (
-       <>
+        <div className={"section--template"}>
+
            <BtnArrow
                theme={"dark"}
                link={"/devextension"}
                direction={"right"}
            />
 
-           <StyledSectionDevContainer>
-               <StyledDevCoversContainer>
+           <div className={"section--template"}
+                style={{
+                    background: 'var(--color-secondary)'
+                }}
+           >
+               <StyledDevLayout>
                    <LinkFrame
                        type={"dev"}
                        subtype={"github"}
                        img={ dev_js_array }
                        header={"Vanilla JS - Array"}
                        link={"https://github.com/VoltG3/javascript/tree/master/js_array"}
-                      /* width={"500px"}
-                       height={"250px"}*/
+                       width={"500"}
+                       height={"350"}
                    />
 
                    <LinkFrame
@@ -35,8 +39,8 @@ export default function Dev() {
                        img={ dev_figma_space }
                        header={"Figma - Space"}
                        link={"https://www.figma.com/file/AeGc0WPx3n0DrSGjq3gyvG/Space?node-id=0%3A1"}
-                     /*  width={"500px"}
-                       height={"250px"}*/
+                       width={"500"}
+                       height={"350"}
                    />
 
                    <LinkFrame
@@ -45,12 +49,12 @@ export default function Dev() {
                        img={ dev_html_frontendmentor }
                        header={"HTML - FrontEndMentor"}
                        link={"https://github.com/VoltG3/html_frontendmentor/tree/master/modern_art_gallery"}
-                    /*   width={"400px"}
-                       height={"581px"}*/
+                       width={"400"}
+                       height={"700"}
                    />
 
-               </StyledDevCoversContainer>
-           </StyledSectionDevContainer>
-       </>
+               </StyledDevLayout>
+           </div>
+       </div>
     )
 }

@@ -1,7 +1,6 @@
 import {
-    StyledSectionFooterContainer,
-    StyledFooterInner,
-    StyledFooterAttribution } from './Footer.style'
+    StyledFooterContainer,
+    StyledFooterContainerInner } from './Footer.style'
 
 import iconLinux from '../img/icons/icon_linux.png'
 import iconHTML from '../img/icons/icon_html.png'
@@ -18,12 +17,18 @@ import iconMinecraft from '../img/icons/icon_minecraft.png'
 
 export default function Footer() {
     return (
-        <StyledSectionFooterContainer>
-            <StyledFooterInner>
-                <div>
-                    <p className="sectionFooter-textline-header">
-                        Mine interesser:
-                    </p>
+        <div className={"section--template"}
+             style={{
+                 background: 'var(--color-secondary)'
+            }}
+        >
+            <StyledFooterContainer>
+                <StyledFooterContainerInner>
+                    <div>
+                        <p className="sectionFooter-textline-header">
+                            Mine interesser:
+                        </p>
+                    </div>
 
                     <div>
                         <img src={ iconLinux } alt="icon" />
@@ -40,45 +45,53 @@ export default function Footer() {
                         <img src={ iconMinecraft } alt="icon" />
                     </div>
 
-                    <table>
-                        <tbody className="sectionFooter-textline-credentials">
-                        <tr>
-                            <td>epost:</td>
-                            <td style={{ paddingLeft: '10px'}}></td>
-                            <td>kristiandanoss@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>github:</td>
-                            <td style={{ paddingLeft: '10px'}}></td>
-                            <td><a href="https://github.com/VoltG3?tab=repositories" target="_blank" rel="noopener noreferrer">VoltG3</a></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+                    <div>
+                        <table>
+                            <tbody className="sectionFooter-textline-credentials">
+                            <tr>
+                                <td>epost:</td>
+                                <td style={{ paddingLeft: '10px'}}></td>
+                                <td>kristiandanoss@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>github:</td>
+                                <td style={{ paddingLeft: '10px'}}></td>
+                                <td><a href="https://github.com/VoltG3?tab=repositories" target="_blank" rel="noopener noreferrer">VoltG3</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-                {/*.sectionFooter-textline-list*/}
-                <ul className="sectionFooter-textline-credentials">
-                    <li># Linux</li>
-                    <li># HTML</li>
-                    <li># JavaScript</li>
-                    <li># Figma</li>
-                    <li># Postgres</li>
-                    <li># Spring Boot</li>
-                    <li># C++</li>
-                    <li># Adobe PremiumPro</li>
-                    <li># Adobe Photoshop</li>
-                    <li># Google SketchUp</li>
-                    <li># Cisco Packet Tracer</li>
-                    <li># Minecraft</li>
-                </ul>
-            </StyledFooterInner>
+                    <div>
+                        <ul className="sectionFooter-textline-list">
+                            <li># Linux</li>
+                            <li># HTML</li>
+                            <li># JavaScript</li>
+                            <li># Figma</li>
+                            <li># Postgres</li>
+                            <li># Spring Boot</li>
+                            <li># C++</li>
+                            <li># Adobe PremiumPro</li>
+                            <li># Adobe Photoshop</li>
+                            <li># Google SketchUp</li>
+                            <li># Cisco Packet Tracer</li>
+                            <li># Minecraft</li>
+                        </ul>
+                    </div>
+                </StyledFooterContainerInner>
+            </StyledFooterContainer>
 
-            <StyledFooterAttribution>
+            <div
+                style={{
+                    width: '100%',
+                    marginTop: '10px',
+                    borderTop: 'solid 1px var(--color-default)'
+                }}
+            >
                 <p className="sectionFooter-textline-html-credentials">
                     Powered by VoltG3 © 2022
                 </p>
-            </StyledFooterAttribution>
-
-        </StyledSectionFooterContainer>
+            </div>
+        </div>
     )
 }

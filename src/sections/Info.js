@@ -3,7 +3,8 @@ import BtnArrow from '../components/BtnArrow'
 
 export default function Info() {
     return (
-        <>
+        <div className={"section--template"}>
+
             <BtnArrow
                 theme={"light"}
                 link={"/infoextension"}
@@ -11,7 +12,6 @@ export default function Info() {
             />
 
             <StyledSectionInfoContainer>
-                <div>
                     <p className="sectionInfo-textline-textcontent">
                         Jeg har vært opptatt av IT siden middelalderen: MS-DOS / Win 3.1
                     </p>
@@ -33,8 +33,7 @@ export default function Info() {
                         kurs inni i BackEnd, CLI-Linux. Ser frem etter en miljø hvor
                         jeg kan bidra og etterhvert vokse til FullStack.
                     </p>
-                </div>
             </StyledSectionInfoContainer>
-        </>
+        </div>
     )
 }

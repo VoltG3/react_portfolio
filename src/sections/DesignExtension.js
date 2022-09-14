@@ -1,6 +1,4 @@
-import {
-    StyledSectionDesignContainer,
-    StyledDesignCoversContainerExtension } from './Design.style'
+import { StyledDesignExtensionLayout } from './Design.style'
 
 import LinkFrame from '../components/LinkFrame'
 import BtnArrow from '../components/BtnArrow'
@@ -16,15 +14,20 @@ import design_postkort from '../img/covers/design_postkort.jpg'
 
 export default function DesignExtension() {
     return (
-        <>
+        <div className={"section--template"}>
+
             <BtnArrow
                 theme={"light"}
                 link={"/default"}
                 direction={"left"}
             />
 
-            <StyledSectionDesignContainer>
-                <StyledDesignCoversContainerExtension>
+            <div className={"section--template"}
+                 style={{
+                     background: 'var(--color-none)'
+                 }}
+            >
+                <StyledDesignExtensionLayout>
 
                     {/*First Block*/}
 
@@ -34,8 +37,8 @@ export default function DesignExtension() {
                         img={ design_book }
                         header={"Book design"}
                         link={"https://drive.google.com/drive/folders/1oQIGsrE9Md_1Yo3Hxw0eVYnta81OSm_Q?usp=sharing"}
-                       /* width={"550px"}
-                        height={"350px"}*/
+                        width={"550"}
+                        height={"350"}
                     />
 
                     <LinkFrame
@@ -44,8 +47,8 @@ export default function DesignExtension() {
                         img={ design_ticket_sankthansfeiring }
                         header={"Arangment Tiket - SanktHansFeiring"}
                         link={"https://drive.google.com/file/d/1pZHx_XVqvgkOq3p7Ug6THvzoezgVXLqR/view?usp=sharing"}
-                        width={"550px"}
-                        height={"200px"}
+                        width={"550"}
+                        height={"200"}
                     />
 
                     <LinkFrame
@@ -54,8 +57,8 @@ export default function DesignExtension() {
                         img={ design_plakat_arrangment }
                         header={"Arangment Plakat"}
                         link={"https://drive.google.com/file/d/1iKQYO9nusessgChTcYg9CUH185sohLZX/view?usp=sharing"}
-                       /* width={"450px"}
-                        height={"781px"}*/
+                        width={"450"}
+                        height={"781"}
                     />
 
                     {/*Second Block*/}
@@ -66,8 +69,8 @@ export default function DesignExtension() {
                         img={ design_plakat_soloforestilling }
                         header={"Arangment Plakat - soloforestilling"}
                         link={"https://drive.google.com/file/d/1dP4MbIjepWaeI-qUGxLB29GyAWIDEwLD/view?usp=sharing"}
-                       /* width={"550px"}
-                        height={"781px"}*/
+                        width={"550"}
+                        height={"781"}
                     />
 
                     <LinkFrame
@@ -76,8 +79,8 @@ export default function DesignExtension() {
                         img={ design_3d_makett }
                         header={"3D Modell"}
                         link={"https://drive.google.com/drive/folders/1_axoOFW-hXBuAUPpXynPXtj_7KqwuawJ?usp=sharing"}
-                        /*width={"450px"}
-                        height={"300px"}*/
+                        width={"450"}
+                        height={"300"}
                     />
 
                     <LinkFrame
@@ -86,8 +89,8 @@ export default function DesignExtension() {
                         img={ design_plakat_japan }
                         header={"Plakat"}
                         link={"https://drive.google.com/file/d/1dP4MbIjepWaeI-qUGxLB29GyAWIDEwLD/view?usp=sharing"}
-                       /* width={"450px"}
-                        height={"250px"}*/
+                        width={"450"}
+                        height={"250"}
                     />
 
                     {/*Third Block*/}
@@ -98,8 +101,8 @@ export default function DesignExtension() {
                         img={ design_postkort }
                         header={"Postkort"}
                         /*link={""}*/
-                        /*width={"450px"}
-                        height={"350px"}*/
+                        width={"450"}
+                        height={"350"}
                     />
 
                     <LinkFrame
@@ -108,11 +111,12 @@ export default function DesignExtension() {
                         img={ design_google_sketchup_presentasjon }
                         header={"Google SketchUp - presentasjon"}
                         link={"https://drive.google.com/file/d/1wkv_5bES41PgiHmYlQdr57XqwwKkhLSZ/view?usp=sharing"}
-                      /*  width={"550px"}
-                        height={"350px"}*/
+                        width={"550"}
+                        height={"350"}
                     />
-                </StyledDesignCoversContainerExtension>
-            </StyledSectionDesignContainer>
-        </>
+
+                </StyledDesignExtensionLayout>
+            </div>
+        </div>
     )
 }

@@ -1,3 +1,4 @@
+
 export default function InfoCell(props) {
    return (
        <div style={{
@@ -6,8 +7,8 @@ export default function InfoCell(props) {
        }}>
            <div
                style={{
-                   width: 'var(--infoCell-width)',
-                   height: 'auto',
+                   display: 'flex',
+                   justifyContent: 'center',
                    borderTop: 'solid  2px var(--color-accent)',
                    borderBottom: 'solid 2px var(--color-accent)'
                 }}
@@ -16,6 +17,10 @@ export default function InfoCell(props) {
                    { props.cellHeader }
                </p>
            </div>
+
+           {/* // ******************
+               // * First textline *
+               // ******************/}
 
            <div
                style={{
@@ -40,6 +45,10 @@ export default function InfoCell(props) {
                </a>
 
            </div>
+
+           {/* // *******************
+               // * Second textline *
+               // *******************/}
 
            <div
                style={{

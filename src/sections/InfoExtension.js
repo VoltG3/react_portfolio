@@ -1,12 +1,13 @@
 import {
     StyledSectionInfoContainer,
-    StyledInfoCellsContainer } from './Info.style'
+    StyledInfoCellsContainer,
+    StyledInfoCellsLayout } from './Info.style'
 import BtnArrow from '../components/BtnArrow'
 import InfoCell from '../components/InfoCell'
 
 export default function InfoExtension() {
     return (
-        <>
+        <div className={"section--template"}>
             <BtnArrow
                 theme={"light"}
                 link={"/default"}
@@ -39,39 +40,43 @@ export default function InfoExtension() {
                 </div>
 
                 <StyledInfoCellsContainer>
-                    <InfoCell
-                        cellHeader = {"Front-End"}
-                        textLine01 = {"JobLoop, 1 år,"}
-                        linkHref01 = {"www.kodehode.no"}
-                        textLine02 = {""}
-                        linkHref02 = {""}
-                    />
+                    <StyledInfoCellsLayout>
 
-                    <InfoCell
-                        cellHeader = {"Tehnisk"}
-                        textLine01 = {"IBM PC Maintenance, 3 måneder"}
-                        linkHref01 = {""}
-                        textLine02 = {"Praksis,"}
-                        linkHref02 = {"www.infocare.com/no"}
-                    />
+                        <InfoCell
+                            cellHeader = {"Front-End"}
+                            textLine01 = {"JobLoop, 1 år,"}
+                            linkHref01 = {"www.kodehode.no"}
+                            textLine02 = {""}
+                            linkHref02 = {""}
+                        />
 
-                    <InfoCell
-                        cellHeader = {"Back-End"}
-                        textLine01 = {"Programmering, 960 timer, "}
-                        linkHref01 = {"www.ltpc.lv/"}
-                        textLine02 = {"Praksis,"}
-                        linkHref02 = {"www.diggecard.no/"}
-                    />
+                        <InfoCell
+                            cellHeader = {"Tehnisk"}
+                            textLine01 = {"IBM PC Maintenance, 3 måneder"}
+                            linkHref01 = {""}
+                            textLine02 = {"Praksis,"}
+                            linkHref02 = {"www.infocare.com/no"}
+                        />
 
-                    <InfoCell
-                        cellHeader = {"Design"}
-                        textLine01 = {"Multimedie design, 960 timer,"}
-                        linkHref01 = {"www.ltpc.lv/"}
-                        textLine02 = {"Frivilig praksis,"}
-                        linkHref02 = {"www.latviesibergena.no/"}
-                    />
+                        <InfoCell
+                            cellHeader = {"Back-End"}
+                            textLine01 = {"Programmering, 960 timer, "}
+                            linkHref01 = {"www.ltpc.lv/"}
+                            textLine02 = {"Praksis,"}
+                            linkHref02 = {"www.diggecard.no/"}
+                        />
+
+                        <InfoCell
+                            cellHeader = {"Design"}
+                            textLine01 = {"Multimedie design, 960 timer,"}
+                            linkHref01 = {"www.ltpc.lv/"}
+                            textLine02 = {"Frivilig praksis,"}
+                            linkHref02 = {"www.latviesibergena.no/"}
+                        />
+
+                    </StyledInfoCellsLayout>
                 </StyledInfoCellsContainer>
             </StyledSectionInfoContainer>
-        </>
+        </div>
     )
 }

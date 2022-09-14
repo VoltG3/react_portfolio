@@ -3,27 +3,28 @@ import styled from 'styled-components'
 export const StyledSectionInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-    max-width: 1440px;
-        width: var(--display-width);
+    max-width: var(--display-width);
+        width: auto;
         height: auto;
-  padding: 0 0 var(--section-bottomPadding) 0;
+  padding-bottom: min(max(11.111vw, 18px), 160px);
   background: var(--color-none);
-  
-  div:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-  }
 `
 
 export const StyledInfoCellsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+    max-width: 100vw;
+        width: 100%;
+`
+
+export const StyledInfoCellsLayout = styled.div`
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-    gap: var(--infoCell-gap);
-  grid-template-areas:
-  ". ."
-  ". .";
+  grid-template-columns: repeat(auto-fit, minmax(100px, 600px));
+  grid-template-rows: repeat(2, auto);
+  grid-auto-rows: auto; 
+    gap: min(max(4.167vw, 22px), 45px);
+      max-width: var(--display-width);
+        width: auto; //calc(var(--display-width) - 80px);
   
-  padding: 50px 87px 0 87px;
+  margin-top: 50px;
 `

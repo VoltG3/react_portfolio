@@ -55,7 +55,6 @@ export default function LinkFrame(props) {
                         alignItems: 'center',
                         width: '100%',
                         height: '50px',
-                        marginTop: '-6px',
                         filter: 'var(--shadow-frame)',
                         /*width: props.width,*/
                         background: props.type === 'dev'
@@ -76,7 +75,7 @@ export default function LinkFrame(props) {
                         onMouseLeave={ handleMouseLeave }
                     >
 
-                    <p className="linkFrame-textline-light"
+                    <p className="linkFrame-textline"
                        style={{
                            color: props.type === 'dev'
                                ? 'var(--color-none)'

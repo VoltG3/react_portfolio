@@ -1,5 +1,4 @@
 import {
-    StyledSectionHeaderContainer,
     StyledHeaderInner,
     StyledHeaderLine,
     StyledHeaderImg,
@@ -9,7 +8,15 @@ import Foto from '../img/foto.jpeg'
 
 export default function Header() {
     return (
-        <StyledSectionHeaderContainer>
+        <div
+            className={"section--template"}
+            style={{
+                background: 'var(--color-none)',
+                paddingTop: 'min(max(9.722vw, 0px), 140px)',
+                paddingBottom: 'min(max(9.722vw, 0px), 140px)'
+            }}
+        >
+
             <StyledHeaderInner>
                 <StyledHeaderImg>
                     <img src={ Foto }  alt="img" />
@@ -24,9 +31,9 @@ export default function Header() {
 
                 </div>
                 <StyledHeaderLine>
-                    <p className="sectionHeader-textline-subheader">pre-dev</p>
+                    <p className="sectionHeader-textline-subheader">portfolio</p>
                 </StyledHeaderLine>
             </StyledHeaderInner>
-        </StyledSectionHeaderContainer>
+        </div>
     )
 }
