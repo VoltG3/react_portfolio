@@ -3,7 +3,7 @@ export default function InfoCell(props) {
    return (
        <div style={{
            display: 'flex',
-           flexDirection: 'column'
+           flexDirection: 'column',
        }}>
            <div
                style={{
@@ -22,7 +22,7 @@ export default function InfoCell(props) {
                // * First textline *
                // ******************/}
 
-           <div
+           <div className={"media460px"}
                style={{
                     display: 'flex',
                     flexDirection: 'row'
@@ -32,7 +32,7 @@ export default function InfoCell(props) {
                    { props.textLine01 }
                </p>
 
-               <a
+               <a id={"media460px"}
                    style={{
                        marginLeft: '-6px'
                    }}
@@ -50,7 +50,7 @@ export default function InfoCell(props) {
                // * Second textline *
                // *******************/}
 
-           <div
+           <div className={"media460px"}
                style={{
                     display: 'flex',
                     flexDirection: 'row'
@@ -60,7 +60,7 @@ export default function InfoCell(props) {
                    { props.textLine02 }
                </p>
 
-               <a
+               <a id={"media460px"}
                    style={{
                        marginLeft: '-6px'
                    }}

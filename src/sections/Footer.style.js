@@ -34,37 +34,47 @@ export const StyledFooterContainerInner = styled.div`
   & div:nth-child(3) { border: solid 1px cornflowerblue; }*/
 
 
-  & div:nth-child(1) {
+  .header {
     display: flex;
     align-items: flex-end;
   }
   
-  & div:nth-child(2) {
+ .icons {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    //padding-top: 20px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
+    
+    & div {
+      display: flex;
+      flex-direction: row;
+    }
     
     & img {
       display: flex;
       flex-wrap: wrap;
-      width: 40px;
-      height: 40px;
+        width: 40px;
+        height: 40px;
       padding: 15px 15px 0 0;
       filter: var(--icon-filter-light);
+
+      @media screen and (max-width: 480px) {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 
-  & div:nth-child(3) {
-
+  .list {
+    display: flex;
+    flex-direction: column;
+   
+   p {
+     margin: 1px;
+   }
   }
   
-  & div:nth-child(4) {
-    
-  }
-
   @media screen and (max-width: 750px) {
     grid-template-areas:
     "A" "B" "D" "C";

@@ -22,6 +22,12 @@ export const StyledHeaderLine = styled.div`
   margin-top: min(max(12.569vw, 120px), 181px);
   filter: var(--shadow-frame);
   background: var(--color-secondary);
+
+  @media screen and (max-width: 480px) {
+    & {
+     margin-top: 110px;
+    }
+  }
 `
 
 export const StyledHeaderImg = styled.div`
@@ -45,6 +51,14 @@ export const StyledHeaderImg = styled.div`
     object-fit: cover;
     filter: grayscale(70%);
   }
+
+  @media screen and (max-width: 480px) {
+   & {
+      width: 150px;
+      height: 150px;
+     margin: 15px 0 0 27px;
+    }
+  }
 `
 
 export const StyledHeaderTextContent = styled.div`
@@ -57,4 +71,11 @@ export const StyledHeaderTextContent = styled.div`
   p:nth-child(1) { margin: 15px 0 10px 0; }
   p:nth-child(2) { margin: 0; }
   p:nth-child(3) { margin: 0; }
+
+  @media screen and (max-width: 480px) {
+    & {
+      margin-top: 15px;
+      margin-left: 200px;
+    }
+  }
 `

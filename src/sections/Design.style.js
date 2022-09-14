@@ -13,8 +13,11 @@ export const StyledDesignCoversContainer = styled.div`
   
   & div { background: var(--color-empty-frame); }
 
-  & div {
-    max-width: 500px!important;
+  @media screen and (max-width: 750px) {
+    & div {
+      max-width: 100%!important;
+      max-height: 100%!important;
+    }
   }
 `
 
@@ -61,7 +64,8 @@ export const StyledDesignExtensionLayout = styled.div`
     "A" "B" "C" "D" "E" "F" "G" "H";
 
     & div {
-      max-width: 500px!important;
+      max-width: 100%!important;
+      max-height: 100%!important;
     }
   }
 `

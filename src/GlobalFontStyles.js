@@ -9,6 +9,11 @@ export const GlobalFontStyles = createGlobalStyle`
           font-size: min(max(2.778vw, 24px), 40px);
           line-height: min(max(3.681vw, 18px), 40px);
       color: var(--color-primary);
+
+      @media screen and (max-width: 480px) {
+        font-weight: 300;
+        font-size: 22px;
+      }
     }
     
     .sectionHeader-textline-header-secondpart {
@@ -18,6 +23,11 @@ export const GlobalFontStyles = createGlobalStyle`
           font-size: min(max(2.500vw, 22px), 36px);
           line-height: min(max(3.264vw, 22px), 40px);
       color: var(--color-primary);
+
+      @media screen and (max-width: 480px) {
+        font-weight: 300;
+        font-size: 18px;
+      }
     }
 
     .sectionHeader-textline-subheader {
@@ -95,7 +105,7 @@ export const GlobalFontStyles = createGlobalStyle`
           font-style: normal;
           font-weight: 400;
           font-size: min(max(1.389vw, 16px), 20px);
-          line-height: 26px;
+          line-height: min(max(1.806vw, 16px), 26px);
           letter-spacing: 0.04em;
       color: var(--color-none);
     } .sectionFooter-textline-credentials a { color: var(--color-none); }

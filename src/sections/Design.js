@@ -29,8 +29,8 @@ export default function Design() {
                         img={ design_google_sketchup_presentasjon }
                         header={"Google SketchUp - presentasjon"}
                         link={"https://drive.google.com/file/d/1wkv_5bES41PgiHmYlQdr57XqwwKkhLSZ/view?usp=sharing"}
-                        width={"600"}
-                        height={"400"}
+                        width={"800"}
+                        height={"500"}
                     />
 
                 </StyledDesignCoversContainer>

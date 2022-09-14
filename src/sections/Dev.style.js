@@ -26,7 +26,8 @@ export const StyledDevLayout = styled.div`
     "A" "B" "C";
 
     & div {
-      max-width: 500px!important;
+      max-width: 100%!important;
+      max-height: 100%!important;
     }
   }
 `
@@ -45,7 +46,8 @@ export const StyledDevLayoutExtension = styled.div`
     "D D D D D D D D F F F F F F F F F F"
     "G G G G G G G G G H H H H H H H H H"
     "I I I I I I I I I J J J J J J J J J"
-    "K K K K K K K K K K K K K L L L L L";
+    "K K K K K K K K K K K K K L L L L L"
+    "M M M M M M M M M M M M M M M M M M";
 
       padding: var(--page-padding-top)
                var(--page-padding-right)
@@ -68,15 +70,15 @@ export const StyledDevLayoutExtension = styled.div`
 
   & div:nth-child(11) { grid-area: K; } // Vanilla JS / PHP / API
   & div:nth-child(12) { grid-area: L; } // React - Calc
+  & div:nth-child(13) { grid-area: M; } // Spring Boot crud postgresql
 
   @media screen and (max-width: 750px) {
     grid-template-areas:
-    "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L";
+    "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M";
 
     & div {
-      max-width: 500px!important;
+      max-width: 100%!important;
+      max-height: 100%!important;
     }
-
-    & div:nth-child(12) { max-height: 600px!important; } // React - Calc
   }
 `

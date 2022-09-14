@@ -25,9 +25,9 @@ export const GlobalRootStyles = createGlobalStyle`
     --display-width: 1440px;
     --pagePaddingTop: min(max(30vw, 0px), 432px);
     --page-padding-top: min(max(3.958vw, 30px), 57px);
-    --page-padding-right: 20px;
+    --page-padding-right: 30px;
     --page-padding-bottom: min(max(11.111vw, 30px), 160px);
-    --page-padding-left: 20px;
+    --page-padding-left: 30px;
     
     .section--template {
       display: flex;
@@ -37,7 +37,6 @@ export const GlobalRootStyles = createGlobalStyle`
         max-width: var(--display-width);
             width: 100%;
             height: auto;
-      border-bottom: solid 1px var(--color-default);
     }
   }
   
@@ -53,5 +52,4 @@ export const GlobalRootStyles = createGlobalStyle`
       --pagePaddingTop: 0px;
     }
   }
-  
 `

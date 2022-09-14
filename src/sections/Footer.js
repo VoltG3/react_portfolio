@@ -24,28 +24,39 @@ export default function Footer() {
         >
             <StyledFooterContainer>
                 <StyledFooterContainerInner>
-                    <div>
+                    <div className={"header"}>
                         <p className="sectionFooter-textline-header">
                             Mine interesser:
                         </p>
                     </div>
 
-                    <div>
-                        <img src={ iconLinux } alt="icon" />
-                        <img src={ iconHTML } alt="icon" />
-                        <img src={ iconJS } alt="icon" />
-                        <img src={ iconFigma } alt="icon" />
-                        <img src={ iconPostgreSQL } alt="icon" />
-                        <img src={ iconSpringBoot} alt="icon" />
-                        <img src={ iconCpp } alt="icon" />
-                        <img src={ iconPremiumPro } alt="icon" />
-                        <img src={ iconPhotoshop } alt="icon" />
-                        <img src={ iconSketchUp } alt="icon" />
-                        <img src={ iconCisco } alt="icon" />
-                        <img src={ iconMinecraft } alt="icon" />
+                    <div className={"icons"}>
+                        <div>
+                            <img src={ iconLinux } alt="icon" />
+                            <img src={ iconHTML } alt="icon" />
+                            <img src={ iconJS } alt="icon" />
+                            <img src={ iconFigma } alt="icon" />
+                            <img src={ iconPostgreSQL } alt="icon" />
+                            <img src={ iconSpringBoot} alt="icon" />
+
+                        </div>
+
+                        <div className={"icon"}>
+                            <img src={ iconCpp } alt="icon" />
+                            <img src={ iconPremiumPro } alt="icon" />
+                            <img src={ iconPhotoshop } alt="icon" />
+                            <img src={ iconSketchUp } alt="icon" />
+                            <img src={ iconCisco } alt="icon" />
+                            <img src={ iconMinecraft } alt="icon" />
+                        </div>
                     </div>
 
-                    <div>
+                    <div
+                        style={{
+                            marginTop: '30px',
+                            border: 'solid 1px red'
+                        }}
+                    >
                         <table>
                             <tbody className="sectionFooter-textline-credentials">
                             <tr>
@@ -62,21 +73,19 @@ export default function Footer() {
                         </table>
                     </div>
 
-                    <div>
-                        <ul className="sectionFooter-textline-list">
-                            <li># Linux</li>
-                            <li># HTML</li>
-                            <li># JavaScript</li>
-                            <li># Figma</li>
-                            <li># Postgres</li>
-                            <li># Spring Boot</li>
-                            <li># C++</li>
-                            <li># Adobe PremiumPro</li>
-                            <li># Adobe Photoshop</li>
-                            <li># Google SketchUp</li>
-                            <li># Cisco Packet Tracer</li>
-                            <li># Minecraft</li>
-                        </ul>
+                    <div className={"sectionFooter-textline-list list"}>
+                        <p># Linux</p>
+                        <p># HTML</p>
+                        <p># JavaScript</p>
+                        <p># Figma</p>
+                        <p># Postgres</p>
+                        <p># Spring Boot</p>
+                        <p># C++</p>
+                        <p># Adobe PremiumPro</p>
+                        <p># Adobe Photoshop</p>
+                        <p># Google SketchUp</p>
+                        <p># Cisco Packet Tracer</p>
+                        <p># Minecraft</p>
                     </div>
                 </StyledFooterContainerInner>
             </StyledFooterContainer>

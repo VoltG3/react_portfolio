@@ -13,7 +13,8 @@ export default function Header() {
             style={{
                 background: 'var(--color-none)',
                 paddingTop: 'min(max(9.722vw, 0px), 140px)',
-                paddingBottom: 'min(max(9.722vw, 0px), 140px)'
+                paddingBottom: 'min(max(9.722vw, 0px), 140px)',
+                borderBottom: 'solid 1px var(--color-default)'
             }}
         >
 

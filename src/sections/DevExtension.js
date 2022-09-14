@@ -15,6 +15,7 @@ import dev_react_fakestore from '../img/covers/dev_react_fakestore.png'
 import dev_cpp_sorting from '../img/covers/dev_cpp_sorting.png'
 import dev_php_js_api from '../img/covers/dev_php_js_api.png'
 import dev_react_calc from '../img/covers/dev_react_calc.png'
+import dev_spring_boot_crud_postgresql from '../img/covers/dev_spring_boot_crud_postgresql.png'
 
 export default function DevExtension() {
     return (
@@ -33,9 +34,9 @@ export default function DevExtension() {
             >
                 <StyledDevLayoutExtension>
 
-                    {/*First Block*/}
+                   {/*First Block*/}
 
-                    <LinkFrame
+                   <LinkFrame
                         type={"dev"}
                         subtype={"github"}
                         img={ dev_js_array }
@@ -122,16 +123,6 @@ export default function DevExtension() {
                     <LinkFrame
                         type={"dev"}
                         subtype={"github"}
-                        img={ dev_php_blog }
-                        header={"PHP - Blog"}
-                        link={"https://github.com/VoltG3/php_blog"}
-                        width={"450"}
-                        height={"250"}
-                    />
-
-                    <LinkFrame
-                        type={"dev"}
-                        subtype={"github"}
                         img={ dev_cpp_sorting }
                         header={"C++ / Sorterings Algoritmer"}
                         link={"https://github.com/VoltG3/react_fakestore"}
@@ -139,7 +130,18 @@ export default function DevExtension() {
                         height={"250"}
                     />
 
+                    <LinkFrame
+                        type={"dev"}
+                        subtype={"github"}
+                        img={ dev_php_blog }
+                        header={"PHP - Blog"}
+                        link={"https://github.com/VoltG3/php_blog"}
+                        width={"450"}
+                        height={"250"}
+                    />
+
                     {/* Fourth Block*/}
+
                     <LinkFrame
                         type={"dev"}
                         subtype={"github"}
@@ -158,6 +160,16 @@ export default function DevExtension() {
                         link={"https://github.com/VoltG3/react_calculator"}
                         width={"250"}
                         height={"300"}
+                    />
+
+                    <LinkFrame
+                        type={"dev"}
+                        subtype={"github"}
+                        img={ dev_spring_boot_crud_postgresql }
+                        header={"Spring Boot - crud postgresql"}
+                        link={"https://github.com/VoltG3/spring_boot_biosquare"}
+                        width={"930"}
+                        height={"350"}
                     />
 
                 </StyledDevLayoutExtension>

@@ -7,15 +7,15 @@ import InfoCell from '../components/InfoCell'
 
 export default function InfoExtension() {
     return (
-        <div className={"section--template"}>
-            <BtnArrow
-                theme={"light"}
-                link={"/default"}
-                direction={"left"}
-            />
+        <>
+            <div className={"section--template"}>
+                <BtnArrow
+                    theme={"light"}
+                    link={"/default"}
+                    direction={"left"}
+                />
 
-            <StyledSectionInfoContainer>
-                <div>
+                <StyledSectionInfoContainer>
                     <p className="sectionInfo-textline-textcontent">
                         Jeg har vært opptatt av IT siden middelalderen: MS-DOS / Win 3.1
                     </p>
@@ -37,8 +37,11 @@ export default function InfoExtension() {
                         kurs inni i BackEnd, CLI-Linux. Ser frem etter en miljø hvor
                         jeg kan bidra og etterhvert vokse til FullStack.
                     </p>
-                </div>
+                </StyledSectionInfoContainer>
 
+            </div>
+
+            <div className={"section--template"}>
                 <StyledInfoCellsContainer>
                     <StyledInfoCellsLayout>
 
@@ -76,7 +79,8 @@ export default function InfoExtension() {
 
                     </StyledInfoCellsLayout>
                 </StyledInfoCellsContainer>
-            </StyledSectionInfoContainer>
-        </div>
+            </div>
+        </>
+
     )
 }

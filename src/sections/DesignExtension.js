@@ -48,7 +48,7 @@ export default function DesignExtension() {
                         header={"Arangment Tiket - SanktHansFeiring"}
                         link={"https://drive.google.com/file/d/1pZHx_XVqvgkOq3p7Ug6THvzoezgVXLqR/view?usp=sharing"}
                         width={"550"}
-                        height={"200"}
+                        height={"300"}
                     />
 
                     <LinkFrame
@@ -70,7 +70,7 @@ export default function DesignExtension() {
                         header={"Arangment Plakat - soloforestilling"}
                         link={"https://drive.google.com/file/d/1dP4MbIjepWaeI-qUGxLB29GyAWIDEwLD/view?usp=sharing"}
                         width={"550"}
-                        height={"781"}
+                        height={"681"}
                     />
 
                     <LinkFrame
