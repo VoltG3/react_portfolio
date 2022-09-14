@@ -55,7 +55,7 @@ export default function InfoExtension() {
 
                         <InfoCell
                             cellHeader = {"Tehnisk"}
-                            textLine01 = {"IBM PC Maintenance, 3 måneder"}
+                            textLine01 = {"IBM PC Maintenance, 3m"}
                             linkHref01 = {""}
                             textLine02 = {"Praksis,"}
                             linkHref02 = {"www.infocare.com/no"}
@@ -63,7 +63,7 @@ export default function InfoExtension() {
 
                         <InfoCell
                             cellHeader = {"Back-End"}
-                            textLine01 = {"Programmering, 960 timer, "}
+                            textLine01 = {"Programmering, 960t, "}
                             linkHref01 = {"www.ltpc.lv/"}
                             textLine02 = {"Praksis,"}
                             linkHref02 = {"www.diggecard.no/"}
@@ -71,7 +71,7 @@ export default function InfoExtension() {
 
                         <InfoCell
                             cellHeader = {"Design"}
-                            textLine01 = {"Multimedie design, 960 timer,"}
+                            textLine01 = {"Multimedie design, 960t,"}
                             linkHref01 = {"www.ltpc.lv/"}
                             textLine02 = {"Frivilig praksis,"}
                             linkHref02 = {"www.latviesibergena.no/"}

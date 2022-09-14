@@ -53,8 +53,7 @@ export default function Footer() {
 
                     <div
                         style={{
-                            marginTop: '30px',
-                            border: 'solid 1px red'
+                            marginTop: '30px'
                         }}
                     >
                         <table>

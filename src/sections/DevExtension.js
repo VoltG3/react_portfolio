@@ -166,7 +166,7 @@ export default function DevExtension() {
                         type={"dev"}
                         subtype={"github"}
                         img={ dev_spring_boot_crud_postgresql }
-                        header={"Spring Boot - crud postgresql"}
+                        header={"Spring Boot - CRUD PostgreSQL"}
                         link={"https://github.com/VoltG3/spring_boot_biosquare"}
                         width={"930"}
                         height={"350"}

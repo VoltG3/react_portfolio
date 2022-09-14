@@ -37,9 +37,15 @@ export const StyledInfoCellsLayout = styled.div`
     
     .media460px {
       flex-direction: column!important;
+      
+      p {
+        text-align: center;
+      }
     }
     
     #media460px {
+      display: flex!important;
+      justify-content: center!important;
       margin-left: 16px!important;
     }
   }
