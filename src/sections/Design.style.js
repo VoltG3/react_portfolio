@@ -5,19 +5,45 @@ export const StyledDesignCoversContainer = styled.div`
   grid-template-columns: auto;
   grid-template-rows: auto;
     gap: 30px;
-
+  width: auto;
+  height: auto;
+  grid-template-areas:
+     "A A A A A A A A A A A A A A A A A A A A";
+  
       padding: var(--page-padding-top)
                var(--page-padding-right)
                var(--page-padding-bottom)
                var(--page-padding-right);
   
   & div { background: var(--color-empty-frame); }
-
+  
+  & div:nth-child(1) { grid-area: A; } // Video
+  
   @media screen and (max-width: 750px) {
+    grid-template-columns: 1fr!important;
+    grid-template-rows: 1fr!important;
+    width: 400px!important;
+    height: 300px!important;
+    grid-template-areas:
+    "A"!important;
+    
     & div {
-      max-width: 100%!important;
-      max-height: 100%!important;
+      max-width: 400px!important;
+      max-height: 300px!important;
     }
+
+    @media screen and (max-width: 320px) {
+      grid-template-columns: 1fr!important;
+      grid-template-rows: 1fr!important;
+      width: 280px!important;
+      height: 200px!important;
+      grid-template-areas:
+      "A"!important;
+
+      & div {
+        max-width: 280px!important;
+        max-height: 200px!important;
+      }
   }
 `
 
