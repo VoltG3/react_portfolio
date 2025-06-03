@@ -2,24 +2,30 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/html_portfolio",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "asset-revision-webpack-plugin": "^1.0.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "6",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.0",
-    "webpack": "^5.73.0"
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "clean": "rm -rf ./build",
+    "build": "webpack --config webpack.config.js && react-scripts build --source-map",
+    "postbuild": "chmod -R 755 ./build && php build/generate-htaccess.php && rm -f build/generate-htaccess.php",
     "deploy": "dotenv -e .env -- yarn run deploy:raw",
-    "deploy:raw": "yarn build && scp -P $DEPLOY_PORT -r ./build/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH && echo 'Deploy successful' || echo 'Deploy failed'",
+    "deploy:raw": "yarn build && scp -P $DEPLOY_PORT -r ./build/. $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH && echo 'Deploy successful' || echo 'Deploy failed'",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -42,6 +48,14 @@
     ]
   },
   "devDependencies": {
-    "dotenv-cli": "^8.0.0"
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "dotenv-cli": "^8.0.0",
+    "file-loader": "^6.2.0",
+    "raw-loader": "^4.0.2",
+    "webpack-dev-server": "^5.2.1"
   }
 }
